@@ -9,264 +9,139 @@
 <meta property="og:title" content="CarePoint Diagnostics — Pimpri-Chinchwad">
 <meta property="og:description" content="CarePoint Diagnostics in Pimpri-Chinchwad. Family-focused pathology lab. Affordable health packages, home collection, fast digital reports.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1587370560942-ad2a04eabb6d?w=1200&q=80">
-<link rel="canonical" href="https://carepointdiagnostics.in/">
+<link rel="canonical" href="https://invictus-labs-demos.vercel.app/03-/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "MedicalClinic",
-  "name": "CarePoint Diagnostics",
-  "description": "Family-focused diagnostic centre in Pimpri-Chinchwad. Affordable blood tests, urine analysis, ECG, ultrasound, and health checkup packages. Serving PCMC since 2012.",
-  "url": "https://carepointdiagnostics.in",
-  "telephone": "+91-20-6789-0123",
-  "priceRange": "₹",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Opp. PCMC Building, Old Mumbai-Pune Road",
-    "addressLocality": "Pimpri-Chinchwad",
-    "postalCode": "411018",
-    "addressRegion": "Maharashtra",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 18.6279,
-    "longitude": 73.8009
-  },
-  "openingHours": ["Mo-Sa 07:00-20:00", "Su 07:00-12:00"],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "reviewCount": "241"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Diagnostic Tests",
-    "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Blood Tests (CBC, LFT, KFT)"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ultrasound Scan"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ECG"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pregnancy & Hormonal Tests"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Senior Citizen Health Package"}}
-    ]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What blood tests are available at CarePoint Diagnostics in Pimpri-Chinchwad?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "CarePoint offers all routine blood tests including CBC, liver function (LFT), kidney function (KFT), blood sugar (fasting, PP, HbA1c), lipid profile, thyroid (TSH, T3, T4), vitamin D, vitamin B12, and iron studies. We also offer specialised tests for infections, hormones, and fertility."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a senior citizen health package at CarePoint Diagnostics?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Our Senior Citizen Health Package at ₹1,499 includes 55+ tests covering cardiac risk, diabetes, kidney, liver, thyroid, bone health (vitamin D, calcium), and a complete blood count. Reports delivered home via WhatsApp. Special 10% discount for patients above 60."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does CarePoint offer pregnancy-related tests?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. We offer a full range of pregnancy and women's health tests including beta-hCG (pregnancy test), anomaly scan package, TORCH panel, amniocentesis support, gestational diabetes screening (GCT/GTT), and post-natal thyroid screening."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are CarePoint's timings and are they open on Sundays?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "CarePoint Diagnostics is open Monday to Saturday 7 AM to 8 PM, and Sunday 7 AM to 12 PM for blood collection and urgent tests. Early morning collection is available for fasting tests."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I book a diagnostic test online at CarePoint?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Book tests online via our website, WhatsApp, or call. For home collection, book before 9 AM for same-day service. You'll receive a confirmation with your collection time and a report download link."
-      }
-    }
-  ]
+ "@context": "https://schema.org",
+ "@type": "MedicalClinic",
+ "name": "CarePoint Diagnostics",
+ "address": {
+ "@type": "PostalAddress",
+ "addressLocality": "Pimpri-Chinchwad",
+ "addressRegion": "Maharashtra",
+ "addressCountry": "IN"
+ },
+ "url": "https://invictus-ai.in"
 }
 </script>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  body { font-family: 'DM Sans', sans-serif; background: #FFF5F5; }
-  h1,h2,h3 { font-family: 'DM Serif Display', serif; }
-  :root { --rose: #E11D48; --rose-light: #FFE4E6; --rose-dark: #be123c; }
-  .rose { color: var(--rose); }
-  .btn-rose { background: var(--rose); color: white; padding: 13px 26px; border-radius: 50px; font-weight: 800; display: inline-block; transition: all 0.2s; }
-  .btn-rose:hover { background: var(--rose-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(225,29,72,0.3); }
-  nav { position: sticky; top: 0; z-index: 100; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
-  .card { background: white; border-radius: 16px; padding: 22px; box-shadow: 0 4px 16px rgba(225,29,72,0.06); transition: all 0.2s; }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(225,29,72,0.12); }
-  .tag { background: var(--rose-light); color: var(--rose); padding: 5px 14px; border-radius: 50px; font-size: 0.78rem; font-weight: 800; display: inline-block; }
-  .whatsapp-btn { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: white; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: all 0.2s; }
-  .whatsapp-btn:hover { transform: scale(1.1); }
-  .service-icon { width:56px; height:56px; border-radius:50%; background:#FFE4E6; color:#E11D48; font-weight:700; font-size:0.8rem; display:flex; align-items:center; justify-content:center; margin: 0 auto 0.75rem; letter-spacing: 0.02em; }
-  .nav-icon { width:36px; height:36px; background:var(--rose); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.65rem; }
+ body { font-family: 'Nunito', sans-serif; background: #FFF5F5; }
+ :root { --rose: #E11D48; --rose-light: #FFE4E6; --rose-dark: #be123c; }
+ .rose { color: var(--rose); }
+ .btn-rose { background: var(--rose); color: white; padding: 13px 26px; border-radius: 50px; font-weight: 800; display: inline-block; transition: all 0.2s; }
+ .btn-rose:hover { background: var(--rose-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(225,29,72,0.3); }
+ nav { position: sticky; top: 0; z-index: 100; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+ .card { background: white; border-radius: 16px; padding: 22px; box-shadow: 0 4px 16px rgba(225,29,72,0.06); transition: all 0.2s; }
+ .card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(225,29,72,0.12); }
+ .tag { background: var(--rose-light); color: var(--rose); padding: 5px 14px; border-radius: 50px; font-size: 0.78rem; font-weight: 800; display: inline-block; }
+ .whatsapp-btn { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: white; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: all 0.2s; }
+ .whatsapp-btn:hover { transform: scale(1.1); }
 </style>
 </head>
 <body>
-<a href="https://wa.me/919876543210" class="whatsapp-btn" aria-label="WhatsApp">WA</a>
+<a href="https://wa.me/919853031234" class="whatsapp-btn">WhatsApp</a>
 <nav>
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center gap-2"><div class="nav-icon">CP</div><span class="font-black rose" style="font-size:1.05rem;">CarePoint Diagnostics</span></div>
-    <button onclick="document.getElementById('mob-03-rose-family').classList.toggle('hidden')" class="md:hidden p-2" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-<div id="mob-03-rose-family" class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-50 border-t"><a href="#tests" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-03-rose-family').classList.add('hidden')">Tests</a>
-<a href="#packages" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-03-rose-family').classList.add('hidden')">Packages</a>
-<a href="#book" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-03-rose-family').classList.add('hidden')">Book</a></div>
-<div class="hidden md:flex gap-8 text-sm font-bold text-gray-500"><a href="#tests" class="hover:text-rose-600">Tests</a><a href="#packages" class="hover:text-rose-600">Packages</a><a href="#book" class="hover:text-rose-600">Book</a></div>
-    <a href="#book" class="btn-rose text-sm">Book Test</a>
-  </div>
+ <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+ <div class="flex items-center gap-2"><span style="font-size:1.5rem;">❤</span><span class="font-black rose" style="font-size:1.05rem;">CarePoint Diagnostics</span></div>
+ <div class="hidden md:flex gap-8 text-sm font-bold text-gray-500"><a href="#tests" class="hover:text-rose-600">Tests</a><a href="#packages" class="hover:text-rose-600">Packages</a><a href="#book" class="hover:text-rose-600">Book</a></div>
+ <a href="#book" class="btn-rose text-sm">Book Test </a>
+ </div>
 </nav>
 
 <section style="background:linear-gradient(135deg, #FFF5F5 0%, #FFE4E6 100%);" class="py-20 px-6">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-14">
-    <div class="flex-1" id="hero-text">
-      <div class="tag mb-6">Trusted by PCMC's Families</div>
-      <h1 style="font-size:3rem; font-weight:900; line-height:1.15; color:#1A1A1A;" class="mb-5">Your Family's<br>Health is Our<br><span class="rose">Priority</span></h1>
-      <p class="text-gray-500 text-lg mb-8 max-w-md leading-relaxed">Affordable, accurate diagnostics for Pimpri-Chinchwad families. Home collection, fast reports, and genuine care -- for 11 years.</p>
-      <div class="flex gap-4 flex-wrap mb-8">
-        <a href="#book" class="btn-rose">Book Test Now &rarr;</a>
-        <a href="tel:02027654321" style="border:2px solid #FDA4AF; color:var(--rose); padding:12px 26px; border-radius:50px; font-weight:800; display:inline-block;">Call Us</a>
-      </div>
-      <div class="flex flex-wrap gap-5 text-sm text-gray-500 font-bold">
-        <span>Free Home Collection</span><span>Lowest Prices</span><span>Fast Reports</span>
-      </div>
-    </div>
-    <div class="flex-1">
-      <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=500&q=80" alt="CarePoint lab" class="rounded-2xl shadow-xl w-full max-w-md object-cover" style="max-height:420px;">
-    </div>
-  </div>
+ <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-14">
+ <div class="flex-1" id="hero-text">
+ <div class="tag mb-6">❤ Trusted by PCMC's Families</div>
+ <h1 style="font-size:3rem; font-weight:900; line-height:1.15; color:#1A1A1A;" class="mb-5">Your Family's<br>Health is Our<br><span class="rose">Priority</span></h1>
+ <p class="text-gray-500 text-lg mb-8 max-w-md leading-relaxed">Affordable, accurate diagnostics for Pimpri-Chinchwad families. Home collection, fast reports, and genuine care — for 11 years.</p>
+ <div class="flex gap-4 flex-wrap mb-8">
+ <a href="#book" class="btn-rose">Book Test Now </a>
+ <a href="tel:02027654321" style="border:2px solid #FDA4AF; color:var(--rose); padding:12px 26px; border-radius:50px; font-weight:800; display:inline-block;">Call Us</a>
+ </div>
+ <div class="flex flex-wrap gap-5 text-sm text-gray-500 font-bold">
+ <span> Free Home Collection</span><span> Lowest Prices</span><span>⚡ Fast Reports</span>
+ </div>
+ </div>
+ <div class="flex-1">
+ <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=500&q=80" alt="CarePoint lab" class="rounded-2xl shadow-xl w-full max-w-md object-cover" style="max-height:420px;">
+ </div>
+ </div>
 </section>
 
-<!-- ABOUT THE LAB - replaces animated counters -->
-<section style="background:var(--rose);" class="py-12 px-6">
-  <div class="max-w-4xl mx-auto text-center text-white">
-    <h2 style="font-family:'DM Serif Display',serif; font-size:1.6rem; font-weight:400; margin-bottom:1rem;">About the Lab</h2>
-    <p style="font-size:0.95rem; opacity:0.9; line-height:1.7; max-width:640px; margin:0 auto;">CarePoint Diagnostics has served Pimpri-Chinchwad families since 2015. We offer 400+ tests at some of the lowest prices in PCMC. Over 30,000 families trust us for their annual health checkups. Rated 4.7 on Google by real patients.</p>
-  </div>
+<section style="background:var(--rose);" class="py-10 px-6">
+ <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+ <div><div style="font-size:2.2rem; font-weight:900;">11yr</div><div class="text-sm opacity-80 mt-1">In Service</div></div>
+ <div><div style="font-size:2.2rem; font-weight:900;">400+</div><div class="text-sm opacity-80 mt-1">Tests</div></div>
+ <div><div style="font-size:2.2rem; font-weight:900;">30K+</div><div class="text-sm opacity-80 mt-1">Families Served</div></div>
+ <div><div style="font-size:2.2rem; font-weight:900;">4.71 out of 5</div><div class="text-sm opacity-80 mt-1">Rating</div></div>
+ </div>
 </section>
 
 <section class="py-20 px-6" id="tests">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-12"><div class="tag mb-4">Popular Tests</div><h2 style="font-size:2.2rem; font-weight:900; color:#1A1A1A;">Tests Starting ₹99</h2></div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="card text-center"><div class="service-icon">CBC</div><div class="font-black rose text-sm mb-1">CBC</div><div class="rose font-bold">₹199</div></div>
-      <div class="card text-center"><div class="service-icon">GLU</div><div class="font-black rose text-sm mb-1">Blood Sugar</div><div class="rose font-bold">₹99</div></div>
-      <div class="card text-center"><div class="service-icon">TFT</div><div class="font-black rose text-sm mb-1">Thyroid</div><div class="rose font-bold">₹349</div></div>
-      <div class="card text-center"><div class="service-icon">VIT-D</div><div class="font-black rose text-sm mb-1">Vitamin D</div><div class="rose font-bold">₹599</div></div>
-      <div class="card text-center"><div class="service-icon">LPD</div><div class="font-black rose text-sm mb-1">Lipid Profile</div><div class="rose font-bold">₹299</div></div>
-      <div class="card text-center"><div class="service-icon">B12</div><div class="font-black rose text-sm mb-1">Vitamin B12</div><div class="rose font-bold">₹399</div></div>
-      <div class="card text-center"><div class="service-icon">LFT</div><div class="font-black rose text-sm mb-1">LFT</div><div class="rose font-bold">₹349</div></div>
-      <div class="card text-center"><div class="service-icon">URIN</div><div class="font-black rose text-sm mb-1">Urine Test</div><div class="rose font-bold">₹129</div></div>
-    </div>
-  </div>
+ <div class="max-w-6xl mx-auto">
+ <div class="text-center mb-12"><div class="tag mb-4">Popular Tests</div><h2 style="font-size:2.2rem; font-weight:900; color:#1A1A1A;">Tests Starting 99</h2></div>
+ <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+ <div class="card text-center"><div style="font-size:2rem;mb:8px;"></div><div class="font-black rose text-sm mb-1">CBC</div><div class="rose font-bold">199</div></div>
+ <div class="card text-center"><div style="font-size:2rem;"></div><div class="font-black rose text-sm mb-1">Blood Sugar</div><div class="rose font-bold">99</div></div>
+ <div class="card text-center"><div style="font-size:2rem;"></div><div class="font-black rose text-sm mb-1">Thyroid</div><div class="rose font-bold">349</div></div>
+ <div class="card text-center"><div style="font-size:2rem;">☀</div><div class="font-black rose text-sm mb-1">Vitamin D</div><div class="rose font-bold">599</div></div>
+ <div class="card text-center"><div style="font-size:2rem;"></div><div class="font-black rose text-sm mb-1">Lipid Profile</div><div class="rose font-bold">299</div></div>
+ <div class="card text-center"><div style="font-size:2rem;"></div><div class="font-black rose text-sm mb-1">Vitamin B12</div><div class="rose font-bold">399</div></div>
+ <div class="card text-center"><div style="font-size:2rem;"></div><div class="font-black rose text-sm mb-1">LFT</div><div class="rose font-bold">349</div></div>
+ <div class="card text-center"><div style="font-size:2rem;"></div><div class="font-black rose text-sm mb-1">Urine Test</div><div class="rose font-bold">129</div></div>
+ </div>
+ </div>
 </section>
 
 <section style="background:#FFF5F5;" class="py-20 px-6" id="packages">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-12"><div class="tag mb-4">Packages</div><h2 style="font-size:2.2rem; font-weight:900; color:#1A1A1A;">Family Health Packages</h2></div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="card text-center"><h3 class="font-black rose text-lg mb-2">Basic Care</h3><div style="font-size:2rem; font-weight:900; color:var(--rose);">₹499</div><div class="text-gray-400 text-sm mb-4">16 Tests</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6 mx-4"><li>- CBC, ESR</li><li>- Blood Sugar</li><li>- Urine Routine</li><li>- TSH</li></ul><a href="#book" class="btn-rose inline-block w-full text-center text-sm">Book</a></div>
-      <div class="card text-center" style="border:2px solid var(--rose);"><div style="background:var(--rose);color:white;border-radius:50px;padding:3px 14px;font-size:0.7rem;font-weight:900;display:inline-block;margin-bottom:8px;">FAMILY FAVOURITE</div><h3 class="font-black rose text-lg mb-2">Family Care</h3><div style="font-size:2rem; font-weight:900; color:var(--rose);">₹1,199</div><div class="text-gray-400 text-sm mb-4">38 Tests</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6 mx-4"><li>- All Basic tests</li><li>- LFT &amp; KFT</li><li>- Lipid Profile</li><li>- HbA1c</li></ul><a href="#book" class="btn-rose inline-block w-full text-center text-sm">Book</a></div>
-      <div class="card text-center"><h3 class="font-black rose text-lg mb-2">Senior Care</h3><div style="font-size:2rem; font-weight:900; color:var(--rose);">₹2,499</div><div class="text-gray-400 text-sm mb-4">60 Tests</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6 mx-4"><li>- All Family tests</li><li>- Vitamins D &amp; B12</li><li>- Cardiac Markers</li><li>- Priority Home Collection</li></ul><a href="#book" class="btn-rose inline-block w-full text-center text-sm">Book</a></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- TESTIMONIALS -->
-<section class="py-16 bg-white">
-  <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-2xl font-bold text-center mb-10" style="color:#E11D48;">Families Trust CarePoint</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-rose-50 p-6 rounded-lg" style="border-left:3px solid #E11D48;">
-        <p class="text-gray-600 text-sm italic mb-3">"Took the whole family — my parents, husband, and two kids. The staff was patient with my 5-year-old who is terrified of needles. Made it a smooth experience."</p>
-        <div class="font-bold text-sm" style="color:#E11D48;">Suman P.</div>
-        <div class="text-xs text-gray-400">Family Health Package</div>
-      </div>
-      <div class="bg-rose-50 p-6 rounded-lg" style="border-left:3px solid #E11D48;">
-        <p class="text-gray-600 text-sm italic mb-3">"Monthly blood work for 9 months. CarePoint remembered my history each visit and tracked my levels without me having to repeat anything."</p>
-        <div class="font-bold text-sm" style="color:#E11D48;">Deepa R.</div>
-        <div class="text-xs text-gray-400">Pregnancy Panel</div>
-      </div>
-      <div class="bg-rose-50 p-6 rounded-lg" style="border-left:3px solid #E11D48;">
-        <p class="text-gray-600 text-sm italic mb-3">"My father is 78 and can't travel easily. Home collection at his doorstep in Pimple Saudagar. No complaints in 3 years of regular testing."</p>
-        <div class="font-bold text-sm" style="color:#E11D48;">Rajesh G.</div>
-        <div class="text-xs text-gray-400">Senior Citizen Checkup</div>
-      </div>
-    </div>
-  </div>
+ <div class="max-w-6xl mx-auto">
+ <div class="text-center mb-12"><div class="tag mb-4">Packages</div><h2 style="font-size:2.2rem; font-weight:900; color:#1A1A1A;">Family Health Packages</h2></div>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+ <div class="card text-center"><h3 class="font-black rose text-lg mb-2">Basic Care</h3><div style="font-size:2rem; font-weight:900; color:var(--rose);">499</div><div class="text-gray-400 text-sm mb-4">16 Tests</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6 mx-4"><li>CBC, ESR</li><li>Blood Sugar</li><li>Urine Routine</li><li>TSH</li></ul><a href="#book" class="btn-rose inline-block w-full text-center text-sm">Book</a></div>
+ <div class="card text-center" style="border:2px solid var(--rose);"><div style="background:var(--rose);color:white;border-radius:50px;padding:3px 14px;font-size:0.7rem;font-weight:900;display:inline-block;margin-bottom:8px;">FAMILY FAVOURITE</div><h3 class="font-black rose text-lg mb-2">Family Care</h3><div style="font-size:2rem; font-weight:900; color:var(--rose);">1,199</div><div class="text-gray-400 text-sm mb-4">38 Tests</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6 mx-4"><li>All Basic tests</li><li>LFT & KFT</li><li>Lipid Profile</li><li>HbA1c</li></ul><a href="#book" class="btn-rose inline-block w-full text-center text-sm">Book</a></div>
+ <div class="card text-center"><h3 class="font-black rose text-lg mb-2">Senior Care</h3><div style="font-size:2rem; font-weight:900; color:var(--rose);">2,499</div><div class="text-gray-400 text-sm mb-4">60 Tests</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6 mx-4"><li>All Family tests</li><li>Vitamins D & B12</li><li>Cardiac Markers</li><li>Priority Home Collection</li></ul><a href="#book" class="btn-rose inline-block w-full text-center text-sm">Book</a></div>
+ </div>
+ </div>
 </section>
 
 <section style="background:var(--rose);" class="py-20 px-6" id="book">
-  <div class="max-w-3xl mx-auto text-center">
-    <h2 style="font-size:2.2rem; font-weight:900;" class="text-white mb-3">Book Your Test</h2>
-    <p class="text-pink-100 mb-10">Home collection free above ₹300. Reports on WhatsApp in 4-8 hours.</p>
-    <form action="https://wa.me/919876543210" method="get">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
-        <div><label class="text-sm font-black text-gray-700 block mb-2">Patient Name</label><input type="text" placeholder="Full name" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-rose-400"></div>
-        <div><label class="text-sm font-black text-gray-700 block mb-2">WhatsApp</label><input type="tel" placeholder="+91 98765 43210" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none"></div>
-        <div><label class="text-sm font-black text-gray-700 block mb-2">Test</label><select class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none"><option>CBC</option><option>Basic Care ₹499</option><option>Family Care ₹1,199</option><option>Senior Care ₹2,499</option><option>Blood Sugar</option><option>Thyroid</option></select></div>
-        <div><label class="text-sm font-black text-gray-700 block mb-2">Collection</label><select class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none"><option>Home Collection</option><option>Walk-in at Lab</option></select></div>
-      </div>
-      <button type="submit" class="btn-rose w-full text-center py-4 rounded-xl font-black text-base">Book My Test</button>
-    </form>
-  </div>
-</section>
-
-<!-- FAQ SECTION -->
-<section class="py-20 px-6" style="background:#FFF5F5;" id="faq">
-  <div class="max-w-3xl mx-auto">
-    <div class="text-center mb-12">
-      <p style="color:#E11D48; font-size:0.75rem; letter-spacing:0.15em; font-weight:700; text-transform:uppercase;">Patient Questions</p>
-      <h2 style="font-size:2rem; font-weight:800; color:#1A1A1A;" class="mt-2">Frequently Asked Questions</h2>
-    </div>
-    <div class="space-y-3">
-      <details style="background:white; border:1px solid #FFE4E6; border-radius:12px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#1A1A1A; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">What blood tests do you offer? <span style="color:#E11D48; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">All routine tests: CBC, LFT, KFT, blood sugar (fasting, PP, HbA1c), lipid profile, thyroid (TSH, T3, T4), vitamin D, B12, iron studies. Plus specialised infection, hormone, and fertility tests.</p>
-      </details>
-      <details style="background:white; border:1px solid #FFE4E6; border-radius:12px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#1A1A1A; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">Do you have a senior citizen health package? <span style="color:#E11D48; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Yes -- ₹1,499 (55+ tests: cardiac, diabetes, kidney, liver, thyroid, bone health). Reports delivered home. 10% discount for patients over 60.</p>
-      </details>
-      <details style="background:white; border:1px solid #FFE4E6; border-radius:12px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#1A1A1A; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">Do you offer pregnancy-related tests? <span style="color:#E11D48; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Yes -- beta-hCG, anomaly scan package, TORCH panel, gestational diabetes (GCT/GTT), and post-natal thyroid screening.</p>
-      </details>
-      <details style="background:white; border:1px solid #FFE4E6; border-radius:12px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#1A1A1A; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">What are your timings? Open Sundays? <span style="color:#E11D48; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Mon-Sat 7 AM-8 PM | Sunday 7 AM-12 PM. Early morning slots for fasting tests.</p>
-      </details>
-      <details style="background:white; border:1px solid #FFE4E6; border-radius:12px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#1A1A1A; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">Can I book tests online? <span style="color:#E11D48; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Yes -- online, WhatsApp, or call. Book home collection before 9 AM for same-day service. Confirmation + report download link sent immediately.</p>
-      </details>
-    </div>
-  </div>
+ <div class="max-w-3xl mx-auto text-center">
+ <h2 style="font-size:2.2rem; font-weight:900;" class="text-white mb-3">Book Your Test </h2>
+ <p class="text-pink-100 mb-10">Home collection free above 300. Reports on WhatsApp in 4–8 hours.</p>
+ <form class="bg-white rounded-2xl p-8 text-left shadow-2xl">
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+ <div><label class="text-sm font-black text-gray-700 block mb-2">Patient Name</label><input type="text" placeholder="Full name" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-rose-400"></div>
+ <div><label class="text-sm font-black text-gray-700 block mb-2">WhatsApp</label><input type="tel" placeholder="+91 98530 31234" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none"></div>
+ <div><label class="text-sm font-black text-gray-700 block mb-2">Test</label><select class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none"><option>CBC</option><option>Basic Care 499</option><option>Family Care 1,199</option><option>Senior Care 2,499</option><option>Blood Sugar</option><option>Thyroid</option></select></div>
+ <div><label class="text-sm font-black text-gray-700 block mb-2">Collection</label><select class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none"><option>Home Collection</option><option>Walk-in at Lab</option></select></div>
+ </div>
+ <button type="submit" class="btn-rose w-full text-center py-4 rounded-xl font-black text-base">Book My Test ❤</button>
+ </form>
+ </div>
 </section>
 
 <footer style="background:#1A1A1A;" class="text-gray-400 py-8 px-6">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
-    <div><div class="text-white font-black mb-1">CarePoint Diagnostics</div><p class="text-sm">Affordable diagnostics for PCMC families since 2015.</p></div>
-    <div><div class="text-white font-bold mb-2 text-sm">Lab</div><div class="text-sm space-y-1"><div>Pimple Saudagar, PCMC</div><div>020-2765-4321</div><div>Mon-Sun: 7AM-8PM</div></div></div>
-  </div>
-  <div class="max-w-6xl mx-auto mt-6 pt-4 border-t border-gray-800 text-xs text-center">&copy; 2026 CarePoint Diagnostics. NABL Accredited &middot; Pimpri-Chinchwad</div>
+ <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
+ <div><div class="text-white font-black mb-1">❤ CarePoint Diagnostics</div><p class="text-sm">Affordable diagnostics for PCMC families since 2015.</p></div>
+ <div><div class="text-white font-bold mb-2 text-sm">Lab</div><div class="text-sm space-y-1"><div>Pimple Saudagar, PCMC</div><div>020-2765-4321</div><div> Mon–Sun: 7AM–8PM</div></div></div>
+ </div>
+ <div class="max-w-6xl mx-auto mt-6 pt-4 border-t border-gray-800 text-xs text-center">© 2026 CarePoint Diagnostics. NABL Certified · Pimpri-Chinchwad</div>
 </footer>
+<script>gsap.from("#hero-text", { opacity:0, y:40, duration:1, ease:"power3.out" });
+  // Form → WhatsApp
+  document.querySelectorAll('form').forEach(function(form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = this.querySelector('input[type="text"]');
+      var phone = this.querySelector('input[type="tel"]');
+      var msg = 'Hi, I would like to enquire about FamilyCare Diagnostics.' + (name && name.value ? ' My name is ' + name.value + '.' : '') + (phone && phone.value ? ' My number is ' + phone.value + '.' : '');
+      window.open('https://wa.me/919853031234?text=' + encodeURIComponent(msg), '_blank');
+    });
+  });
+</script>
 </body>
 </html>
