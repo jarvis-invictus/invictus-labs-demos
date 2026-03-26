@@ -9,329 +9,209 @@
 <meta property="og:title" content="MedPath Diagnostics — Pune">
 <meta property="og:description" content="MedPath Diagnostics in Pune. NABL-accredited pathology lab — blood tests, health packages, home collection. Fast reports, accurate results.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=1200&q=80">
-<link rel="canonical" href="https://medpathdiagnostics.in/">
+<link rel="canonical" href="https://invictus-labs-demos.vercel.app/01-/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "MedicalClinic",
-  "name": "MedPath Diagnostics",
-  "description": "NABL-accredited diagnostic laboratory in Kothrud, Pune. Blood tests, urine analysis, X-ray, ultrasound, ECG, full body checkup packages. Home collection available.",
-  "url": "https://medpathdiagnostics.in",
-  "telephone": "+91-20-3456-7890",
-  "priceRange": "₹",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Shop 7, Paud Road, Kothrud",
-    "addressLocality": "Pune",
-    "postalCode": "411038",
-    "addressRegion": "Maharashtra",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 18.5074,
-    "longitude": 73.8077
-  },
-  "openingHours": ["Mo-Sa 07:00-21:00", "Su 07:00-13:00"],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "reviewCount": "328"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Diagnostic Tests",
-    "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Complete Blood Count (CBC)"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lipid Profile"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "HbA1c (Diabetes Test)"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Full Body Checkup Package"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Blood Collection"}}
-    ]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does MedPath Diagnostics offer home blood collection in Pune?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. MedPath offers home blood collection service in Kothrud, Deccan, Karve Nagar, and nearby areas. Book online or call us before 9 AM for same-day morning collection. Reports are delivered digitally within 24 hours."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the cost of a full body checkup at MedPath Diagnostics?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Full body checkup packages at MedPath start at ₹999 and include CBC, lipid profile, blood sugar, kidney function, liver function, thyroid (TSH), and urine routine. Executive packages with vitamin D, B12, and HbA1c are available from ₹1,999."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is MedPath Diagnostics NABL accredited?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. MedPath Diagnostics is NABL accredited, which means our laboratory meets national standards for accuracy, quality, and safety. NABL accreditation is required for diagnostic results accepted by major hospitals, insurance companies, and CGHS."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How quickly do I get my blood test reports?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Routine blood test reports are available within 4-6 hours. Full body checkup reports are ready within 24 hours. Specialised tests like culture or histopathology may take 3-7 days. All reports are delivered via WhatsApp and email, and also available to download from our portal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does MedPath accept Mediclaim / health insurance for tests?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. MedPath Diagnostics accepts cashless claims from major health insurance providers and TPA panels. We also accept CGHS empanelment. Please carry your insurance card and policy number. For reimbursement claims, we provide original receipts and stamped reports."
-      }
-    }
-  ]
+ "@context": "https://schema.org",
+ "@type": "MedicalClinic",
+ "name": "MedPath Diagnostics",
+ "address": {
+ "@type": "PostalAddress",
+ "addressLocality": "Pune",
+ "addressRegion": "Maharashtra",
+ "addressCountry": "IN"
+ },
+ "url": "https://invictus-ai.in"
 }
 </script>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
-  body { font-family: 'DM Sans', sans-serif; }
-  h1,h2,h3 { font-family: 'DM Serif Display', serif; }
-  :root { --teal: #0E7490; --teal-light: #CFFAFE; --teal-dark: #0C6380; --sky: #F0FDFF; }
-  .teal { color: var(--teal); }
-  .btn-teal { background: var(--teal); color: white; padding: 13px 28px; border-radius: 6px; font-weight: 700; display: inline-block; transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
-  .btn-teal:hover { background: var(--teal-dark); box-shadow: 0 6px 20px rgba(14,116,144,0.3); transform: translateY(-1px); }
-  nav { position: sticky; top: 0; z-index: 100; background: white; border-bottom: 1px solid #E0F7FA; }
-  .card { background: white; border-radius: 8px; padding: 22px; border: 1px solid #E0F7FA; transition: all 0.2s; }
-  .card:hover { border-color: var(--teal); box-shadow: 0 8px 24px rgba(14,116,144,0.1); transform: translateY(-3px); }
-  .tag { background: var(--teal-light); color: var(--teal); padding: 5px 14px; border-radius: 4px; font-size: 0.78rem; font-weight: 800; display: inline-block; letter-spacing: 0.04em; }
-  .whatsapp-btn { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: white; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: all 0.2s; }
-  .whatsapp-btn:hover { transform: scale(1.1); }
-  .test-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #F0FDFF; }
-  .test-row:last-child { border-bottom: none; }
-  .service-icon { width:56px; height:56px; border-radius:50%; background:#E0F7FA; color:#0E7490; font-weight:700; font-size:0.8rem; display:flex; align-items:center; justify-content:center; margin: 0 auto 1rem; letter-spacing: 0.02em; }
-  .nav-icon { width:38px; height:38px; background:var(--teal); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.7rem; }
+ body { font-family: 'Nunito Sans', sans-serif; }
+ h1,h2,h3 { font-family: 'Playfair Display', serif; }
+ :root { --teal: #0E7490; --teal-light: #CFFAFE; --teal-dark: #0C6380; --sky: #F0FDFF; }
+ .teal { color: var(--teal); }
+ .btn-teal { background: var(--teal); color: white; padding: 13px 28px; border-radius: 6px; font-weight: 700; display: inline-block; transition: all 0.2s; font-family: 'Nunito Sans', sans-serif; }
+ .btn-teal:hover { background: var(--teal-dark); box-shadow: 0 6px 20px rgba(14,116,144,0.3); transform: translateY(-1px); }
+ nav { position: sticky; top: 0; z-index: 100; background: white; border-bottom: 1px solid #E0F7FA; }
+ .card { background: white; border-radius: 8px; padding: 22px; border: 1px solid #E0F7FA; transition: all 0.2s; }
+ .card:hover { border-color: var(--teal); box-shadow: 0 8px 24px rgba(14,116,144,0.1); transform: translateY(-3px); }
+ .tag { background: var(--teal-light); color: var(--teal); padding: 5px 14px; border-radius: 4px; font-size: 0.78rem; font-weight: 800; display: inline-block; letter-spacing: 0.04em; }
+ .whatsapp-btn { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: white; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: all 0.2s; }
+ .whatsapp-btn:hover { transform: scale(1.1); }
+ .test-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #F0FDFF; }
+ .test-row:last-child { border-bottom: none; }
 </style>
 </head>
 <body class="bg-white">
-<a href="https://wa.me/919876543210" class="whatsapp-btn" aria-label="WhatsApp">WA</a>
+<a href="https://wa.me/919851011234" class="whatsapp-btn">WhatsApp</a>
 
 <!-- TOP BAR -->
 <div style="background:var(--teal); padding:7px 24px; text-align:center; font-size:0.78rem; color:white; font-weight:700; letter-spacing:0.04em;">
-  FREE HOME SAMPLE COLLECTION &middot; REPORTS IN 6-12 HOURS &middot; NABL ACCREDITED
+ FREE HOME SAMPLE COLLECTION · REPORTS IN 6–12 HOURS · NABL ACCREDITED
 </div>
 
 <!-- NAV -->
 <nav>
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center gap-2">
-      <div class="nav-icon">MP</div>
-      <div><div class="font-bold teal" style="font-family:'DM Serif Display',serif; font-size:1rem;">MedPath Diagnostics</div><div style="font-size:0.63rem; color:#888; letter-spacing:0.06em;">NABL ACCREDITED &middot; PUNE</div></div>
-    </div>
-    <button onclick="document.getElementById('mob-01-medpath-standard').classList.toggle('hidden')" class="md:hidden p-2" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-<div id="mob-01-medpath-standard" class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-50 border-t"><a href="#tests" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-01-medpath-standard').classList.add('hidden')">Tests</a>
-<a href="#packages" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-01-medpath-standard').classList.add('hidden')">Packages</a>
-<a href="#about" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-01-medpath-standard').classList.add('hidden')">About</a>
-<a href="#book" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-01-medpath-standard').classList.add('hidden')">Book</a></div>
-<div class="hidden md:flex gap-8 text-sm font-semibold text-gray-500">
-      <a href="#tests" class="hover:text-teal-700">Tests</a>
-      <a href="#packages" class="hover:text-teal-700">Packages</a>
-      <a href="#about" class="hover:text-teal-700">About</a>
-      <a href="#book" class="hover:text-teal-700">Book</a>
-    </div>
-    <a href="#book" class="btn-teal text-sm">Book Test</a>
-  </div>
+ <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+ <div class="flex items-center gap-2">
+ <div style="width:38px; height:38px; background:var(--teal); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.2rem;"></div>
+ <div><div class="font-bold teal" style="font-family:'Playfair Display',serif; font-size:1rem;">MedPath Diagnostics</div><div style="font-size:0.63rem; color:#888; letter-spacing:0.06em;">NABL ACCREDITED · PUNE</div></div>
+ </div>
+ <div class="hidden md:flex gap-8 text-sm font-semibold text-gray-500">
+ <a href="#tests" class="hover:text-teal-700">Tests</a>
+ <a href="#packages" class="hover:text-teal-700">Packages</a>
+ <a href="#about" class="hover:text-teal-700">About</a>
+ <a href="#book" class="hover:text-teal-700">Book</a>
+ </div>
+ <a href="#book" class="btn-teal text-sm">Book Test</a>
+ </div>
 </nav>
 
 <!-- HERO -->
 <section style="background: linear-gradient(135deg, var(--sky) 0%, #E0F7FA 100%);" class="py-20 px-6">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-14">
-    <div class="flex-1" id="hero-text">
-      <div class="tag mb-6">NABL Accredited &middot; ISO Certified</div>
-      <h1 style="font-size:3rem; line-height:1.2; color:#0C4A6E;" class="mb-5">Accurate Diagnostics.<br><span class="teal">Fast Reports.</span><br>Home Collection.</h1>
-      <p class="text-gray-500 text-lg mb-8 max-w-md leading-relaxed">Pune's trusted diagnostic lab. 500+ tests, home sample collection, digital reports in 6-12 hours. Trusted by 200+ doctors.</p>
-      <div class="flex gap-4 flex-wrap mb-8">
-        <a href="#book" class="btn-teal">Book Test Online &rarr;</a>
-        <a href="tel:02034567890" style="border:2px solid #99F6E4; color:var(--teal); padding:12px 26px; border-radius:6px; font-weight:700; display:inline-block; transition:all 0.2s;" onmouseover="this.style.background='#E0F7FA'" onmouseout="this.style.background='transparent'">Call Lab</a>
-      </div>
-      <div class="flex flex-wrap gap-5 text-sm text-gray-500 font-semibold">
-        <span>Free Home Collection</span><span>WhatsApp Reports</span><span>EMI Available</span>
-      </div>
-    </div>
-    <div class="flex-1">
-      <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=500&q=80" alt="Diagnostic lab" class="rounded-xl shadow-xl w-full max-w-md object-cover" style="max-height:420px; border:3px solid #CFFAFE;">
-    </div>
-  </div>
+ <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-14">
+ <div class="flex-1" id="hero-text">
+ <div class="tag mb-6">NABL Accredited · ISO Certified</div>
+ <h1 style="font-size:3rem; line-height:1.2; color:#0C4A6E;" class="mb-5">Accurate Diagnostics.<br><span class="teal">Fast Reports.</span><br>Home Collection.</h1>
+ <p class="text-gray-500 text-lg mb-8 max-w-md leading-relaxed">Pune's trusted diagnostic lab. 500+ tests, home sample collection, digital reports in 6-12 hours. Trusted by 200+ doctors.</p>
+ <div class="flex gap-4 flex-wrap mb-8">
+ <a href="#book" class="btn-teal">Book Test Online </a>
+ <a href="tel:02034567890" style="border:2px solid #99F6E4; color:var(--teal); padding:12px 26px; border-radius:6px; font-weight:700; display:inline-block; transition:all 0.2s;" onmouseover="this.style.background='#E0F7FA'" onmouseout="this.style.background='transparent'">Call Lab</a>
+ </div>
+ <div class="flex flex-wrap gap-5 text-sm text-gray-500 font-semibold">
+ <span> Free Home Collection</span><span>WhatsApp Reports</span><span> EMI Available</span>
+ </div>
+ </div>
+ <div class="flex-1">
+ <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=500&q=80" alt="Diagnostic lab" class="rounded-xl shadow-xl w-full max-w-md object-cover" style="max-height:420px; border:3px solid #CFFAFE;">
+ </div>
+ </div>
 </section>
 
-<!-- ABOUT THE LAB -->
-<section style="background:var(--teal);" class="py-12 px-6">
-  <div class="max-w-4xl mx-auto text-center text-white">
-    <h2 style="font-family:'DM Serif Display',serif; font-size:1.6rem; font-weight:400; margin-bottom:1rem;">About the Lab</h2>
-    <p style="font-size:0.95rem; opacity:0.9; line-height:1.7; max-width:640px; margin:0 auto;">MedPath Diagnostics has been serving Pune since 2012. We run over 500 tests across pathology, biochemistry, and microbiology from our NABL-accredited facility in Kothrud. Over 200 referring doctors and 50,000 reports delivered. Our average turnaround is 6 hours for routine blood work.</p>
-  </div>
+<!-- STATS -->
+<section style="background:var(--teal);" class="py-10 px-6">
+ <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+ <div><div style="font-size:2.2rem; font-weight:800;">500+</div><div class="text-sm opacity-80 mt-1">Tests Available</div></div>
+ <div><div style="font-size:2.2rem; font-weight:800;">200+</div><div class="text-sm opacity-80 mt-1">Referring Doctors</div></div>
+ <div><div style="font-size:2.2rem; font-weight:800;">50K+</div><div class="text-sm opacity-80 mt-1">Reports Delivered</div></div>
+ <div><div style="font-size:2.2rem; font-weight:800;">6hrs</div><div class="text-sm opacity-80 mt-1">Report Turnaround</div></div>
+ </div>
 </section>
 
 <!-- POPULAR TESTS -->
 <section class="py-20 px-6" id="tests">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-12"><div class="tag mb-4">Popular Tests</div><h2 style="font-size:2.2rem;" class="teal font-bold">Most Ordered Tests</h2></div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="card">
-        <h3 class="font-bold teal text-lg mb-4">Blood Tests</h3>
-        <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Complete Blood Count (CBC)</span><span class="teal font-bold text-sm">₹249</span></div>
-        <div class="test-row"><span class="text-gray-700 text-sm font-semibold">HbA1c (Diabetes)</span><span class="teal font-bold text-sm">₹349</span></div>
-        <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Lipid Profile</span><span class="teal font-bold text-sm">₹399</span></div>
-        <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Thyroid (T3/T4/TSH)</span><span class="teal font-bold text-sm">₹499</span></div>
-        <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Vitamin D &amp; B12</span><span class="teal font-bold text-sm">₹799</span></div>
-      </div>
-      <div class="card">
-        <h3 class="font-bold teal text-lg mb-4">Other Tests</h3>
-        <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Urine Routine &amp; Microscopy</span><span class="teal font-bold text-sm">₹149</span></div>
-        <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Liver Function Test (LFT)</span><span class="teal font-bold text-sm">₹449</span></div>
-        <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Kidney Function Test (KFT)</span><span class="teal font-bold text-sm">₹449</span></div>
-        <div class="test-row"><span class="text-gray-700 text-sm font-semibold">COVID-19 RT-PCR</span><span class="teal font-bold text-sm">₹799</span></div>
-        <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Culture &amp; Sensitivity</span><span class="teal font-bold text-sm">₹699</span></div>
-      </div>
-    </div>
-  </div>
+ <div class="max-w-6xl mx-auto">
+ <div class="text-center mb-12"><div class="tag mb-4">Popular Tests</div><h2 style="font-size:2.2rem;" class="teal font-bold">Most Ordered Tests</h2></div>
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+ <div class="card">
+ <h3 class="font-bold teal text-lg mb-4">Blood Tests</h3>
+ <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Complete Blood Count (CBC)</span><span class="teal font-bold text-sm">249</span></div>
+ <div class="test-row"><span class="text-gray-700 text-sm font-semibold">HbA1c (Diabetes)</span><span class="teal font-bold text-sm">349</span></div>
+ <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Lipid Profile</span><span class="teal font-bold text-sm">399</span></div>
+ <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Thyroid (T3/T4/TSH)</span><span class="teal font-bold text-sm">499</span></div>
+ <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Vitamin D & B12</span><span class="teal font-bold text-sm">799</span></div>
+ </div>
+ <div class="card">
+ <h3 class="font-bold teal text-lg mb-4">Other Tests</h3>
+ <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Urine Routine & Microscopy</span><span class="teal font-bold text-sm">149</span></div>
+ <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Liver Function Test (LFT)</span><span class="teal font-bold text-sm">449</span></div>
+ <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Kidney Function Test (KFT)</span><span class="teal font-bold text-sm">449</span></div>
+ <div class="test-row"><span class="text-gray-700 text-sm font-semibold">COVID-19 RT-PCR</span><span class="teal font-bold text-sm">799</span></div>
+ <div class="test-row"><span class="text-gray-700 text-sm font-semibold">Culture & Sensitivity</span><span class="teal font-bold text-sm">699</span></div>
+ </div>
+ </div>
+ </div>
 </section>
 
 <!-- PACKAGES -->
 <section class="py-20 px-6" style="background:var(--sky);" id="packages">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-12"><div class="tag mb-4">Health Packages</div><h2 style="font-size:2.2rem;" class="teal font-bold">Full Body Checkup Packages</h2></div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="card text-center">
-        <div class="service-icon">BAS</div>
-        <h3 class="font-bold teal text-lg mb-1">Basic Health</h3>
-        <div style="font-size:2rem; font-weight:800; color:var(--teal);" class="my-3">₹799</div>
-        <div class="text-gray-500 text-sm mb-4">18 Tests included</div>
-        <div class="text-xs text-gray-400 space-y-1 text-left">
-          <div>- CBC, ESR</div><div>- Blood Sugar (F&amp;PP)</div><div>- Lipid Profile</div><div>- Urine Routine</div><div>- Thyroid (TSH)</div>
-        </div>
-        <a href="#book" class="btn-teal inline-block mt-6 text-sm w-full text-center">Book Now</a>
-      </div>
-      <div class="card text-center" style="border:2px solid var(--teal); position:relative;">
-        <div style="position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--teal); color:white; padding:4px 16px; border-radius:50px; font-size:0.72rem; font-weight:800; white-space:nowrap;">MOST POPULAR</div>
-        <div class="service-icon">COMP</div>
-        <h3 class="font-bold teal text-lg mb-1">Comprehensive</h3>
-        <div style="font-size:2rem; font-weight:800; color:var(--teal);" class="my-3">₹1,499</div>
-        <div class="text-gray-500 text-sm mb-4">42 Tests included</div>
-        <div class="text-xs text-gray-400 space-y-1 text-left">
-          <div>- All Basic tests</div><div>- Liver &amp; Kidney Function</div><div>- Vitamins D &amp; B12</div><div>- HbA1c</div><div>- Electrolytes</div>
-        </div>
-        <a href="#book" class="btn-teal inline-block mt-6 text-sm w-full text-center">Book Now</a>
-      </div>
-      <div class="card text-center">
-        <div class="service-icon">EXEC</div>
-        <h3 class="font-bold teal text-lg mb-1">Executive Plus</h3>
-        <div style="font-size:2rem; font-weight:800; color:var(--teal);" class="my-3">₹2,999</div>
-        <div class="text-gray-500 text-sm mb-4">72 Tests included</div>
-        <div class="text-xs text-gray-400 space-y-1 text-left">
-          <div>- All Comprehensive tests</div><div>- Hormonal Profile</div><div>- Cardiac Risk Markers</div><div>- Cancer Markers (3)</div><div>- Free Home Collection</div>
-        </div>
-        <a href="#book" class="btn-teal inline-block mt-6 text-sm w-full text-center">Book Now</a>
-      </div>
-    </div>
-  </div>
+ <div class="max-w-6xl mx-auto">
+ <div class="text-center mb-12"><div class="tag mb-4">Health Packages</div><h2 style="font-size:2.2rem;" class="teal font-bold">Full Body Checkup Packages</h2></div>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+ <div class="card text-center">
+ <div style="font-size:2rem; margin-bottom:8px;"></div>
+ <h3 class="font-bold teal text-lg mb-1">Basic Health</h3>
+ <div style="font-size:2rem; font-weight:800; color:var(--teal);" class="my-3">799</div>
+ <div class="text-gray-500 text-sm mb-4">18 Tests included</div>
+ <div class="text-xs text-gray-400 space-y-1 text-left">
+ <div>CBC, ESR</div><div>Blood Sugar (F&PP)</div><div>Lipid Profile</div><div>Urine Routine</div><div>Thyroid (TSH)</div>
+ </div>
+ <a href="#book" class="btn-teal inline-block mt-6 text-sm w-full text-center">Book Now</a>
+ </div>
+ <div class="card text-center" style="border:2px solid var(--teal); position:relative;">
+ <div style="position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--teal); color:white; padding:4px 16px; border-radius:50px; font-size:0.72rem; font-weight:800; white-space:nowrap;">MOST POPULAR</div>
+ <div style="font-size:2rem; margin-bottom:8px;"></div>
+ <h3 class="font-bold teal text-lg mb-1">Comprehensive</h3>
+ <div style="font-size:2rem; font-weight:800; color:var(--teal);" class="my-3">1,499</div>
+ <div class="text-gray-500 text-sm mb-4">42 Tests included</div>
+ <div class="text-xs text-gray-400 space-y-1 text-left">
+ <div>All Basic tests</div><div>Liver & Kidney Function</div><div>Vitamins D & B12</div><div>HbA1c</div><div>Electrolytes</div>
+ </div>
+ <a href="#book" class="btn-teal inline-block mt-6 text-sm w-full text-center">Book Now</a>
+ </div>
+ <div class="card text-center">
+ <div style="font-size:2rem; margin-bottom:8px;"></div>
+ <h3 class="font-bold teal text-lg mb-1">Executive Plus</h3>
+ <div style="font-size:2rem; font-weight:800; color:var(--teal);" class="my-3">2,999</div>
+ <div class="text-gray-500 text-sm mb-4">72 Tests included</div>
+ <div class="text-xs text-gray-400 space-y-1 text-left">
+ <div>All Comprehensive tests</div><div>Hormonal Profile</div><div>Cardiac Risk Markers</div><div>Cancer Markers (3)</div><div>Free Home Collection</div>
+ </div>
+ <a href="#book" class="btn-teal inline-block mt-6 text-sm w-full text-center">Book Now</a>
+ </div>
+ </div>
+ </div>
 </section>
 
 <!-- BOOK -->
-
-<!-- TESTIMONIALS -->
-<section class="py-16 bg-white">
-  <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-2xl font-bold text-center mb-10" style="color:#0E7490;">Patient Reviews</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-teal-50 p-6 rounded-lg" style="border-left:3px solid #0E7490;">
-        <p class="text-gray-600 text-sm italic mb-3">"Got my reports on WhatsApp within 6 hours of the blood draw. Everything clearly marked with normal ranges. My doctor was impressed with the report format."</p>
-        <div class="font-bold text-sm" style="color:#0E7490;">Priya D.</div>
-        <div class="text-xs text-gray-400">Full Body Checkup</div>
-      </div>
-      <div class="bg-teal-50 p-6 rounded-lg" style="border-left:3px solid #0E7490;">
-        <p class="text-gray-600 text-sm italic mb-3">"The home collection was exactly on time. The phlebotomist was professional and quick — barely felt the needle. Reports came same day."</p>
-        <div class="font-bold text-sm" style="color:#0E7490;">Arun K.</div>
-        <div class="text-xs text-gray-400">Thyroid Panel</div>
-      </div>
-      <div class="bg-teal-50 p-6 rounded-lg" style="border-left:3px solid #0E7490;">
-        <p class="text-gray-600 text-sm italic mb-3">"Affordable packages and no hidden charges. The ₹799 basic panel covers everything you need for a yearly checkup."</p>
-        <div class="font-bold text-sm" style="color:#0E7490;">Meena S.</div>
-        <div class="text-xs text-gray-400">Diabetes Screening</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section style="background:var(--teal);" class="py-20 px-6" id="book">
-  <div class="max-w-3xl mx-auto text-center">
-    <h2 style="font-size:2.2rem;" class="font-bold text-white mb-3">Book Your Test</h2>
-    <p class="text-teal-100 mb-10">Home collection available 7AM-7PM. Get reports on WhatsApp.</p>
-    <form action="https://wa.me/919876543210" method="get">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
-        <div><label class="text-sm font-bold text-gray-700 block mb-2">Patient Name</label><input type="text" placeholder="Full name" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-500"></div>
-        <div><label class="text-sm font-bold text-gray-700 block mb-2">Phone / WhatsApp</label><input type="tel" placeholder="+91 98765 43210" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none"></div>
-        <div><label class="text-sm font-bold text-gray-700 block mb-2">Test / Package</label>
-          <select class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none">
-            <option>CBC</option><option>Basic Health Package ₹799</option><option>Comprehensive ₹1,499</option><option>Executive Plus ₹2,999</option><option>HbA1c</option><option>Thyroid</option><option>Other</option>
-          </select></div>
-        <div><label class="text-sm font-bold text-gray-700 block mb-2">Collection Type</label>
-          <select class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none">
-            <option>Home Collection (Free)</option><option>Walk-in at Lab</option>
-          </select></div>
-      </div>
-      <button type="submit" class="btn-teal w-full text-center py-4 rounded-lg font-bold text-base">Book Test Now &rarr;</button>
-      <p class="text-center text-xs text-gray-400 mt-3">Reports delivered to WhatsApp in 6-12 hours</p>
-    </form>
-  </div>
-</section>
-
-<!-- FAQ SECTION -->
-<section class="py-20 px-6" style="background:#F0FDFF;" id="faq">
-  <div class="max-w-3xl mx-auto">
-    <div class="text-center mb-12">
-      <p style="color:#0E7490; font-size:0.75rem; letter-spacing:0.15em; font-weight:700; text-transform:uppercase;">Patient Questions</p>
-      <h2 style="font-size:2rem; font-weight:700; color:#0C4A6E; font-family:'DM Serif Display',serif;" class="mt-2">Frequently Asked Questions</h2>
-    </div>
-    <div class="space-y-3">
-      <details style="background:white; border:1px solid #CFFAFE; border-radius:10px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#0C4A6E; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">Do you offer home blood collection? <span style="color:#0E7490; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Yes -- home collection in Kothrud, Deccan, Karve Nagar, and nearby areas. Book before 9 AM for same-day morning collection. Reports delivered via WhatsApp within 24 hours.</p>
-      </details>
-      <details style="background:white; border:1px solid #CFFAFE; border-radius:10px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#0C4A6E; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">What does a full body checkup cost? <span style="color:#0E7490; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Packages start at ₹999 (CBC, lipid, sugar, kidney, liver, thyroid, urine). Executive packages with vitamin D, B12, and HbA1c from ₹1,999.</p>
-      </details>
-      <details style="background:white; border:1px solid #CFFAFE; border-radius:10px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#0C4A6E; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">Is MedPath NABL accredited? <span style="color:#0E7490; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Yes -- NABL accredited for national accuracy and quality standards. Reports accepted by major hospitals, insurance companies, and CGHS.</p>
-      </details>
-      <details style="background:white; border:1px solid #CFFAFE; border-radius:10px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#0C4A6E; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">How quickly are reports ready? <span style="color:#0E7490; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Routine tests: 4-6 hours. Full body checkups: 24 hours. All reports via WhatsApp, email, and online portal download.</p>
-      </details>
-      <details style="background:white; border:1px solid #CFFAFE; border-radius:10px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#0C4A6E; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">Do you accept health insurance? <span style="color:#0E7490; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Yes -- cashless claims from major insurers and TPA panels. CGHS empanelled. Original receipts and stamped reports provided for reimbursement claims.</p>
-      </details>
-    </div>
-  </div>
+ <div class="max-w-3xl mx-auto text-center">
+ <h2 style="font-size:2.2rem;" class="font-bold text-white mb-3">Book Your Test</h2>
+ <p class="text-teal-100 mb-10">Home collection available 7AM–7PM. Get reports on WhatsApp.</p>
+ <form class="bg-white rounded-xl p-8 text-left shadow-2xl">
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+ <div><label class="text-sm font-bold text-gray-700 block mb-2">Patient Name</label><input type="text" placeholder="Full name" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-500"></div>
+ <div><label class="text-sm font-bold text-gray-700 block mb-2">Phone / WhatsApp</label><input type="tel" placeholder="+91 98510 11234" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none"></div>
+ <div><label class="text-sm font-bold text-gray-700 block mb-2">Test / Package</label>
+ <select class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none">
+ <option>CBC</option><option>Basic Health Package 799</option><option>Comprehensive 1,499</option><option>Executive Plus 2,999</option><option>HbA1c</option><option>Thyroid</option><option>Other</option>
+ </select></div>
+ <div><label class="text-sm font-bold text-gray-700 block mb-2">Collection Type</label>
+ <select class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none">
+ <option>Home Collection (Free)</option><option>Walk-in at Lab</option>
+ </select></div>
+ </div>
+ <button type="submit" class="btn-teal w-full text-center py-4 rounded-lg font-bold text-base">Book Test Now </button>
+ <p class="text-center text-xs text-gray-400 mt-3">Reports delivered to WhatsApp in 6–12 hours</p>
+ </form>
+ </div>
 </section>
 
 <footer style="background:#0C4A6E;" class="text-blue-200 py-8 px-6">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
-    <div><div class="text-white font-bold mb-1" style="font-family:'DM Serif Display',serif;">MedPath Diagnostics</div><p class="text-sm max-w-xs">NABL accredited diagnostic lab. Trusted by Pune's doctors.</p></div>
-    <div><div class="text-white font-semibold mb-2 text-sm">Lab</div><div class="text-sm space-y-1"><div>Kothrud, Pune 411038</div><div>020-3456-7890</div><div>Mon-Sun: 7AM-9PM</div></div></div>
-  </div>
-  <div class="max-w-6xl mx-auto mt-6 pt-4 border-t border-blue-900 text-xs text-center">&copy; 2026 MedPath Diagnostics Pvt. Ltd. &middot; NABL Accredited &middot; ISO 15189:2012</div>
+ <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
+ <div><div class="text-white font-bold mb-1" style="font-family:'Playfair Display',serif;"> MedPath Diagnostics</div><p class="text-sm max-w-xs">NABL accredited diagnostic lab. Trusted by Pune's doctors.</p></div>
+ <div><div class="text-white font-semibold mb-2 text-sm">Lab</div><div class="text-sm space-y-1"><div>FC Road, Pune 411004</div><div>020-3456-7890</div><div> Mon–Sun: 7AM–9PM</div></div></div>
+ </div>
+ <div class="max-w-6xl mx-auto mt-6 pt-4 border-t border-blue-900 text-xs text-center">© 2026 MedPath Diagnostics Pvt. Ltd. · NABL Accredited · ISO 15189:2012</div>
 </footer>
+<script>
+ gsap.registerPlugin(ScrollTrigger);
+ gsap.from("#hero-text", { opacity: 0, y: 40, duration: 1, ease: "power3.out" });
+ gsap.utils.toArray(".card").forEach((c,i) => gsap.from(c, { opacity:0, y:20, duration:0.6, delay:i*0.07, scrollTrigger:{trigger:c, start:"top 88%"} }));
+
+  // Form → WhatsApp
+  document.querySelectorAll('form').forEach(function(form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = this.querySelector('input[type="text"]');
+      var phone = this.querySelector('input[type="tel"]');
+      var msg = 'Hi, I would like to enquire about MedPath Diagnostics.' + (name && name.value ? ' My name is ' + name.value + '.' : '') + (phone && phone.value ? ' My number is ' + phone.value + '.' : '');
+      window.open('https://wa.me/919851011234?text=' + encodeURIComponent(msg), '_blank');
+    });
+  });
+</script>
 </body>
 </html>
