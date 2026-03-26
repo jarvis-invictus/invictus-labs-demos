@@ -9,266 +9,133 @@
 <meta property="og:title" content="HealthScan Labs — Mumbai">
 <meta property="og:description" content="HealthScan Labs in Mumbai. Diagnostic centre with 500+ tests — blood, urine, radiology, health packages. Home collection available.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&q=80">
-<link rel="canonical" href="https://healthscanlabs.in/">
+<link rel="canonical" href="https://invictus-labs-demos.vercel.app/02-/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "MedicalClinic",
-  "name": "HealthScan Labs",
-  "description": "Advanced diagnostic laboratory network in Mumbai. MRI, CT scan, digital X-ray, pathology, and preventive health packages. NABL accredited with 8 collection centres.",
-  "url": "https://healthscanlabs.in",
-  "telephone": "+91-22-3456-7890",
-  "priceRange": "₹₹",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Level 2, Inorbit Mall Complex, Malad West",
-    "addressLocality": "Mumbai",
-    "postalCode": "400064",
-    "addressRegion": "Maharashtra",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 19.1896,
-    "longitude": 72.8484
-  },
-  "openingHours": ["Mo-Sa 07:00-22:00", "Su 08:00-14:00"],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "512"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Diagnostic Services",
-    "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "MRI Scan"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CT Scan"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital X-Ray"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pathology & Blood Tests"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Preventive Health Packages"}}
-    ]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the cost of an MRI scan at HealthScan Labs Mumbai?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MRI scan prices at HealthScan Labs start at ₹4,500 for single region (brain, spine, knee) and go up to ₹8,000 for contrast MRI. Full-body MRI packages are available from ₹15,000. We offer discounts on pre-booking and weekend appointments."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does HealthScan Labs have home sample collection in Mumbai?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. We offer home blood and urine collection across Mumbai including Malad, Andheri, Borivali, Goregaon, and Kandivali. Book before 8 AM for same-morning collection. Reports are sent digitally within 24 hours."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does a CT scan take at HealthScan Labs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A CT scan at HealthScan Labs takes 10-30 minutes including preparation. Non-contrast scans are typically faster. Contrast CT requires 30 minutes wait after contrast injection. Reports are ready within 2-4 hours and shared digitally."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is HealthScan Labs open on Sundays?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. HealthScan Labs is open Sunday 8 AM to 2 PM for urgent tests and blood collection. Imaging services (MRI, CT) are available Monday through Saturday."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What preventive health packages does HealthScan Labs offer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "HealthScan Labs offers Preventive Health packages from ₹1,499 (Basic -- 40 tests), ₹2,999 (Comprehensive -- 75 tests including cardiac and hormonal markers), and ₹4,999 (Executive -- 100+ tests with vitamin panel, cancer markers, and ECG). Annual health packages include free repeat tests."
-      }
-    }
-  ]
+ "@context": "https://schema.org",
+ "@type": "MedicalClinic",
+ "name": "HealthScan Labs",
+ "address": {
+ "@type": "PostalAddress",
+ "addressLocality": "Mumbai",
+ "addressRegion": "Maharashtra",
+ "addressCountry": "IN"
+ },
+ "url": "https://invictus-ai.in"
 }
 </script>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  body { font-family: 'DM Sans', sans-serif; background: #F8F9FA; }
-  h1,h2,h3 { font-family: 'DM Serif Display', serif; }
-  :root { --blue: #1E40AF; --blue-light: #DBEAFE; --sky: #F0F7FF; }
-  .blue { color: var(--blue); }
-  .btn-blue { background: var(--blue); color: white; padding: 13px 26px; border-radius: 8px; font-weight: 700; display: inline-block; transition: all 0.2s; }
-  .btn-blue:hover { background: #1e3a8a; box-shadow: 0 6px 20px rgba(30,64,175,0.3); transform: translateY(-1px); }
-  nav { position: sticky; top: 0; z-index: 100; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-  .card { background: white; border-radius: 10px; padding: 22px; box-shadow: 0 2px 12px rgba(30,64,175,0.06); transition: all 0.2s; }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(30,64,175,0.12); }
-  .pill { background: var(--blue-light); color: var(--blue); padding: 5px 14px; border-radius: 50px; font-size: 0.78rem; font-weight: 800; display: inline-block; }
-  .whatsapp-btn { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: white; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: all 0.2s; }
-  .whatsapp-btn:hover { transform: scale(1.1); }
-  .service-icon { width:56px; height:56px; border-radius:50%; background:#DBEAFE; color:#1E40AF; font-weight:700; font-size:0.8rem; display:flex; align-items:center; justify-content:center; margin: 0 auto 0.75rem; letter-spacing: 0.02em; }
-  .nav-icon { width:36px; height:36px; background:var(--blue); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.65rem; }
+ body { font-family: 'Manrope', sans-serif; background: #F8F9FA; }
+ :root { --blue: #1E40AF; --blue-light: #DBEAFE; --sky: #F0F7FF; }
+ .blue { color: var(--blue); }
+ .btn-blue { background: var(--blue); color: white; padding: 13px 26px; border-radius: 8px; font-weight: 700; display: inline-block; transition: all 0.2s; }
+ .btn-blue:hover { background: #1e3a8a; box-shadow: 0 6px 20px rgba(30,64,175,0.3); transform: translateY(-1px); }
+ nav { position: sticky; top: 0; z-index: 100; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+ .card { background: white; border-radius: 10px; padding: 22px; box-shadow: 0 2px 12px rgba(30,64,175,0.06); transition: all 0.2s; }
+ .card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(30,64,175,0.12); }
+ .pill { background: var(--blue-light); color: var(--blue); padding: 5px 14px; border-radius: 50px; font-size: 0.78rem; font-weight: 800; display: inline-block; }
+ .whatsapp-btn { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: white; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: all 0.2s; }
+ .whatsapp-btn:hover { transform: scale(1.1); }
 </style>
 </head>
 <body>
-<a href="https://wa.me/919876543210" class="whatsapp-btn" aria-label="WhatsApp">WA</a>
+<a href="https://wa.me/919852021234" class="whatsapp-btn">WhatsApp</a>
 <nav>
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center gap-2"><div class="nav-icon">HS</div><span class="font-bold blue" style="font-size:1.05rem;">HealthScan Labs</span></div>
-    <button onclick="document.getElementById('mob-02-blue-network').classList.toggle('hidden')" class="md:hidden p-2" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-<div id="mob-02-blue-network" class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-50 border-t"><a href="#tests" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-02-blue-network').classList.add('hidden')">Tests</a>
-<a href="#packages" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-02-blue-network').classList.add('hidden')">Packages</a>
-<a href="#book" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-02-blue-network').classList.add('hidden')">Book</a></div>
-<div class="hidden md:flex gap-8 text-sm font-semibold text-gray-500"><a href="#tests" class="hover:text-blue-800">Tests</a><a href="#packages" class="hover:text-blue-800">Packages</a><a href="#book" class="hover:text-blue-800">Book</a></div>
-    <a href="#book" class="btn-blue text-sm">Book Now</a>
-  </div>
+ <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+ <div class="flex items-center gap-2"><span class="font-bold blue" style="font-size:1.05rem;">HealthScan Labs</span></div>
+ <div class="hidden md:flex gap-8 text-sm font-semibold text-gray-500"><a href="#tests" class="hover:text-blue-800">Tests</a><a href="#packages" class="hover:text-blue-800">Packages</a><a href="#book" class="hover:text-blue-800">Book</a></div>
+ <a href="#book" class="btn-blue text-sm">Book Now</a>
+ </div>
 </nav>
 
 <section style="background:linear-gradient(135deg, #EFF6FF 0%, #F0F7FF 100%);" class="py-20 px-6">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-14">
-    <div class="flex-1" id="hero-text">
-      <div class="pill mb-6">Mumbai's Most Trusted Lab Network</div>
-      <h1 style="font-size:3rem; font-weight:800; line-height:1.2; color:#1E3A8A;" class="mb-5">Test Smarter.<br>Stay <span class="blue">Healthier</span>.</h1>
-      <p class="text-gray-500 text-lg mb-8 max-w-md leading-relaxed">Digital-first diagnostic lab with 8 collection centers across Mumbai. Book online, get home pickup, receive reports on WhatsApp in hours.</p>
-      <div class="flex gap-4 flex-wrap mb-8">
-        <a href="#book" class="btn-blue">Book Online &rarr;</a>
-        <a href="tel:02212345678" style="border:2px solid #BFDBFE; color:var(--blue); padding:12px 26px; border-radius:8px; font-weight:700; display:inline-block;">022-1234-5678</a>
-      </div>
-      <div class="flex flex-wrap gap-5 text-sm text-gray-500 font-semibold">
-        <span>Digital Reports</span><span>Home Collection</span><span>6-Hour Results</span>
-      </div>
-    </div>
-    <div class="flex-1">
-      <!-- About the Lab - narrative block replacing animated counters -->
-      <div class="card" style="padding:28px;">
-        <h3 class="blue text-lg mb-3" style="font-family:'DM Serif Display',serif;">About the Lab</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-4">HealthScan Labs operates 8 collection centres across Mumbai, from Malad to Borivali. We run 600+ tests covering pathology, radiology (MRI, CT, X-ray), and preventive health. Our central processing lab in Andheri handles over 75,000 tests annually.</p>
-        <div class="grid grid-cols-2 gap-4 mt-4">
-          <div><div style="font-size:1.4rem;font-weight:800;color:var(--blue);">600+</div><div class="text-gray-400 text-xs mt-1">Tests</div></div>
-          <div><div style="font-size:1.4rem;font-weight:800;color:var(--blue);">8</div><div class="text-gray-400 text-xs mt-1">Mumbai Centers</div></div>
-          <div><div style="font-size:1.4rem;font-weight:800;color:var(--blue);">75K+</div><div class="text-gray-400 text-xs mt-1">Tests Done</div></div>
-          <div><div style="font-size:1.4rem;font-weight:800;color:var(--blue);">4.8</div><div class="text-gray-400 text-xs mt-1">Google Rating</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-14">
+ <div class="flex-1" id="hero-text">
+ <div class="pill mb-6"> Mumbai's Most Trusted Lab Network</div>
+ <h1 style="font-size:3rem; font-weight:800; line-height:1.2; color:#1E3A8A;" class="mb-5">Test Smarter.<br>Stay <span class="blue">Healthier</span>.</h1>
+ <p class="text-gray-500 text-lg mb-8 max-w-md leading-relaxed">Digital-first diagnostic lab with 8 collection centers across Mumbai. Book online, get home pickup, receive reports on WhatsApp in hours.</p>
+ <div class="flex gap-4 flex-wrap mb-8">
+ <a href="#book" class="btn-blue">Book Online </a>
+ <a href="tel:02212345678" style="border:2px solid #BFDBFE; color:var(--blue); padding:12px 26px; border-radius:8px; font-weight:700; display:inline-block;">022-1234-5678</a>
+ </div>
+ <div class="flex flex-wrap gap-5 text-sm text-gray-500 font-semibold">
+ <span>Digital Reports</span><span> Home Collection</span><span>⚡ 6-Hour Results</span>
+ </div>
+ </div>
+ <div class="flex-1 grid grid-cols-2 gap-4">
+ <div class="card text-center py-6"><div style="font-size:2.2rem;font-weight:800;color:var(--blue);">600+</div><div class="text-gray-500 text-sm mt-1">Tests</div></div>
+ <div class="card text-center py-6"><div style="font-size:2.2rem;font-weight:800;color:var(--blue);">8</div><div class="text-gray-500 text-sm mt-1">Mumbai Centers</div></div>
+ <div class="card text-center py-6"><div style="font-size:2.2rem;font-weight:800;color:var(--blue);">75K+</div><div class="text-gray-500 text-sm mt-1">Tests Done</div></div>
+ <div class="card text-center py-6"><div style="font-size:2.2rem;font-weight:800;color:var(--blue);">4.81 out of 5</div><div class="text-gray-500 text-sm mt-1">Google Rating</div></div>
+ </div>
+ </div>
 </section>
 
 <section class="py-20 px-6" id="tests">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-12"><div class="pill mb-4">Popular Tests</div><h2 style="font-size:2.2rem; font-weight:800; color:#1E3A8A;">Most Booked Tests</h2></div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="card text-center"><div class="service-icon">CBC</div><div class="font-bold blue text-sm mb-1">CBC</div><div class="blue font-bold">₹199</div></div>
-      <div class="card text-center"><div class="service-icon">LPD</div><div class="font-bold blue text-sm mb-1">Lipid Profile</div><div class="blue font-bold">₹349</div></div>
-      <div class="card text-center"><div class="service-icon">HbA1c</div><div class="font-bold blue text-sm mb-1">HbA1c</div><div class="blue font-bold">₹349</div></div>
-      <div class="card text-center"><div class="service-icon">TFT</div><div class="font-bold blue text-sm mb-1">Thyroid TSH</div><div class="blue font-bold">₹449</div></div>
-      <div class="card text-center"><div class="service-icon">VIT-D</div><div class="font-bold blue text-sm mb-1">Vitamin D</div><div class="blue font-bold">₹649</div></div>
-      <div class="card text-center"><div class="service-icon">B12</div><div class="font-bold blue text-sm mb-1">Vitamin B12</div><div class="blue font-bold">₹499</div></div>
-      <div class="card text-center"><div class="service-icon">LFT</div><div class="font-bold blue text-sm mb-1">LFT</div><div class="blue font-bold">₹399</div></div>
-      <div class="card text-center"><div class="service-icon">KFT</div><div class="font-bold blue text-sm mb-1">KFT</div><div class="blue font-bold">₹399</div></div>
-    </div>
-  </div>
+ <div class="max-w-6xl mx-auto">
+ <div class="text-center mb-12"><div class="pill mb-4">Popular Tests</div><h2 style="font-size:2.2rem; font-weight:800; color:#1E3A8A;">Most Booked Tests</h2></div>
+ <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+ <div class="card text-center"><div style="font-size:1.8rem;margin-bottom:8px;"></div><div class="font-bold blue text-sm mb-1">CBC</div><div class="blue font-bold">199</div></div>
+ <div class="card text-center"><div style="font-size:1.8rem;margin-bottom:8px;"></div><div class="font-bold blue text-sm mb-1">Lipid Profile</div><div class="blue font-bold">349</div></div>
+ <div class="card text-center"><div style="font-size:1.8rem;margin-bottom:8px;"></div><div class="font-bold blue text-sm mb-1">HbA1c</div><div class="blue font-bold">349</div></div>
+ <div class="card text-center"><div style="font-size:1.8rem;margin-bottom:8px;"></div><div class="font-bold blue text-sm mb-1">Thyroid TSH</div><div class="blue font-bold">449</div></div>
+ <div class="card text-center"><div style="font-size:1.8rem;margin-bottom:8px;">☀</div><div class="font-bold blue text-sm mb-1">Vitamin D</div><div class="blue font-bold">649</div></div>
+ <div class="card text-center"><div style="font-size:1.8rem;margin-bottom:8px;"></div><div class="font-bold blue text-sm mb-1">Vitamin B12</div><div class="blue font-bold">499</div></div>
+ <div class="card text-center"><div style="font-size:1.8rem;margin-bottom:8px;"></div><div class="font-bold blue text-sm mb-1">LFT</div><div class="blue font-bold">399</div></div>
+ <div class="card text-center"><div style="font-size:1.8rem;margin-bottom:8px;"></div><div class="font-bold blue text-sm mb-1">KFT</div><div class="blue font-bold">399</div></div>
+ </div>
+ </div>
 </section>
 
 <section style="background:#EFF6FF;" class="py-20 px-6" id="packages">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center mb-12"><div class="pill mb-4">Packages</div><h2 style="font-size:2.2rem; font-weight:800; color:#1E3A8A;">Health Checkup Packages</h2></div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="card text-center"><h3 class="font-bold blue text-lg mb-2">Starter</h3><div style="font-size:2rem;font-weight:800;color:var(--blue);">₹599</div><div class="text-gray-400 text-sm mb-4">20 Parameters</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6"><li>- CBC &amp; ESR</li><li>- Blood Glucose</li><li>- Urine Routine</li><li>- Thyroid (TSH)</li></ul><a href="#book" class="btn-blue inline-block w-full text-center text-sm">Book Now</a></div>
-      <div class="card text-center" style="border:2px solid var(--blue);"><div style="background:var(--blue);color:white;border-radius:50px;font-size:0.72rem;font-weight:800;padding:3px 12px;display:inline-block;margin-bottom:8px;">BEST VALUE</div><h3 class="font-bold blue text-lg mb-2">Advanced</h3><div style="font-size:2rem;font-weight:800;color:var(--blue);">₹1,299</div><div class="text-gray-400 text-sm mb-4">48 Parameters</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6"><li>- All Starter tests</li><li>- LFT &amp; KFT</li><li>- Lipid Profile</li><li>- HbA1c &amp; Vitamins</li></ul><a href="#book" class="btn-blue inline-block w-full text-center text-sm">Book Now</a></div>
-      <div class="card text-center"><h3 class="font-bold blue text-lg mb-2">Premium</h3><div style="font-size:2rem;font-weight:800;color:var(--blue);">₹2,799</div><div class="text-gray-400 text-sm mb-4">76 Parameters</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6"><li>- All Advanced tests</li><li>- Hormone Panel</li><li>- Cardiac Markers</li><li>- Free Home Collection</li></ul><a href="#book" class="btn-blue inline-block w-full text-center text-sm">Book Now</a></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- TESTIMONIALS -->
-<section class="py-16 bg-white">
-  <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-2xl font-bold text-center mb-10" style="color:#1D4ED8;">What Patients Say</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-blue-50 p-6 rounded-lg" style="border-left:3px solid #1D4ED8;">
-        <p class="text-gray-600 text-sm italic mb-3">"HealthScan handled our entire company health checkup — 200 employees across 3 locations in Mumbai. Reports were delivered digitally within 48 hours."</p>
-        <div class="font-bold text-sm" style="color:#1D4ED8;">Rahul M.</div>
-        <div class="text-xs text-gray-400">Corporate Health Package</div>
-      </div>
-      <div class="bg-blue-50 p-6 rounded-lg" style="border-left:3px solid #1D4ED8;">
-        <p class="text-gray-600 text-sm italic mb-3">"Booked online at 11 PM, phlebotomist showed up at 7 AM sharp. The whole experience felt like ordering food delivery but for blood tests."</p>
-        <div class="font-bold text-sm" style="color:#1D4ED8;">Sneha T.</div>
-        <div class="text-xs text-gray-400">Home Collection</div>
-      </div>
-      <div class="bg-blue-50 p-6 rounded-lg" style="border-left:3px solid #1D4ED8;">
-        <p class="text-gray-600 text-sm italic mb-3">"I refer all my patients to HealthScan for specialized panels. Their lipid profiles and HbA1c accuracy is consistently reliable."</p>
-        <div class="font-bold text-sm" style="color:#1D4ED8;">Dr. Vivek N.</div>
-        <div class="text-xs text-gray-400">Referring Physician</div>
-      </div>
-    </div>
-  </div>
+ <div class="max-w-6xl mx-auto">
+ <div class="text-center mb-12"><div class="pill mb-4">Packages</div><h2 style="font-size:2.2rem; font-weight:800; color:#1E3A8A;">Health Checkup Packages</h2></div>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+ <div class="card text-center"><h3 class="font-bold blue text-lg mb-2">Starter</h3><div style="font-size:2rem;font-weight:800;color:var(--blue);">599</div><div class="text-gray-400 text-sm mb-4">20 Parameters</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6"><li>CBC & ESR</li><li>Blood Glucose</li><li>Urine Routine</li><li>Thyroid (TSH)</li></ul><a href="#book" class="btn-blue inline-block w-full text-center text-sm">Book Now</a></div>
+ <div class="card text-center" style="border:2px solid var(--blue);"><div style="background:var(--blue);color:white;border-radius:50px;font-size:0.72rem;font-weight:800;padding:3px 12px;display:inline-block;margin-bottom:8px;">BEST VALUE</div><h3 class="font-bold blue text-lg mb-2">Advanced</h3><div style="font-size:2rem;font-weight:800;color:var(--blue);">1,299</div><div class="text-gray-400 text-sm mb-4">48 Parameters</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6"><li>All Starter tests</li><li>LFT & KFT</li><li>Lipid Profile</li><li>HbA1c & Vitamins</li></ul><a href="#book" class="btn-blue inline-block w-full text-center text-sm">Book Now</a></div>
+ <div class="card text-center"><h3 class="font-bold blue text-lg mb-2">Premium</h3><div style="font-size:2rem;font-weight:800;color:var(--blue);">2,799</div><div class="text-gray-400 text-sm mb-4">76 Parameters</div><ul class="text-xs text-gray-500 text-left space-y-1 mb-6"><li>All Advanced tests</li><li>Hormone Panel</li><li>Cardiac Markers</li><li>Free Home Collection</li></ul><a href="#book" class="btn-blue inline-block w-full text-center text-sm">Book Now</a></div>
+ </div>
+ </div>
 </section>
 
 <section style="background:var(--blue);" class="py-20 px-6" id="book">
-  <div class="max-w-3xl mx-auto text-center">
-    <h2 style="font-size:2.2rem; font-weight:800;" class="text-white mb-3">Book Your Test</h2>
-    <p class="text-blue-200 mb-10">Home collection across Mumbai. Reports on WhatsApp.</p>
-    <form action="https://wa.me/919876543210" method="get">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
-        <div><label class="text-sm font-bold text-gray-700 block mb-2">Name</label><input type="text" placeholder="Patient name" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500"></div>
-        <div><label class="text-sm font-bold text-gray-700 block mb-2">WhatsApp</label><input type="tel" placeholder="+91 98765 43210" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none"></div>
-        <div><label class="text-sm font-bold text-gray-700 block mb-2">Test / Package</label><select class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none"><option>CBC</option><option>Starter Package ₹599</option><option>Advanced Package ₹1,299</option><option>Premium Package ₹2,799</option><option>Thyroid</option><option>Other</option></select></div>
-        <div><label class="text-sm font-bold text-gray-700 block mb-2">Collection</label><select class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none"><option>Home Collection (Free)</option><option>Walk-in</option></select></div>
-      </div>
-      <button type="submit" class="btn-blue w-full text-center py-4 rounded-lg font-bold text-base">Book Test &rarr;</button>
-    </form>
-  </div>
-</section>
-
-<!-- FAQ SECTION -->
-<section class="py-20 px-6" style="background:#F0F7FF;" id="faq">
-  <div class="max-w-3xl mx-auto">
-    <div class="text-center mb-12">
-      <p style="color:#1E40AF; font-size:0.75rem; letter-spacing:0.15em; font-weight:700; text-transform:uppercase;">Patient Questions</p>
-      <h2 style="font-size:2rem; font-weight:700; color:#1E3A8A;" class="mt-2">Frequently Asked Questions</h2>
-    </div>
-    <div class="space-y-3">
-      <details style="background:white; border:1px solid #DBEAFE; border-radius:10px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#1E40AF; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">What does an MRI scan cost? <span style="color:#1E40AF; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">MRI scans from ₹4,500 (single region -- brain, spine, knee), contrast MRI from ₹8,000. Full-body MRI from ₹15,000. Discounts on pre-booking and weekend appointments.</p>
-      </details>
-      <details style="background:white; border:1px solid #DBEAFE; border-radius:10px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#1E40AF; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">Do you offer home sample collection in Mumbai? <span style="color:#1E40AF; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Yes -- across Malad, Andheri, Borivali, Goregaon, and Kandivali. Book before 8 AM for same-morning collection. Reports sent digitally within 24 hours.</p>
-      </details>
-      <details style="background:white; border:1px solid #DBEAFE; border-radius:10px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#1E40AF; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">How long does a CT scan take? <span style="color:#1E40AF; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">10-30 minutes including preparation. Contrast CT requires 30 min wait post-injection. Reports ready in 2-4 hours and shared digitally.</p>
-      </details>
-      <details style="background:white; border:1px solid #DBEAFE; border-radius:10px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#1E40AF; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">Are you open on Sundays? <span style="color:#1E40AF; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Yes -- Sundays 8 AM to 2 PM for urgent tests and blood collection. Imaging (MRI, CT) available Mon-Sat.</p>
-      </details>
-      <details style="background:white; border:1px solid #DBEAFE; border-radius:10px; padding:20px; cursor:pointer;">
-        <summary style="font-weight:700; color:#1E40AF; font-size:0.95rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">What preventive health packages do you offer? <span style="color:#1E40AF; font-size:1.2rem;">+</span></summary>
-        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Basic ₹1,499 (40 tests), Comprehensive ₹2,999 (75 tests incl. cardiac + hormonal), Executive ₹4,999 (100+ tests, vitamins, cancer markers, ECG). Annual packages include free repeat tests.</p>
-      </details>
-    </div>
-  </div>
+ <div class="max-w-3xl mx-auto text-center">
+ <h2 style="font-size:2.2rem; font-weight:800;" class="text-white mb-3">Book Your Test</h2>
+ <p class="text-blue-200 mb-10">Home collection across Mumbai. Reports on WhatsApp.</p>
+ <form class="bg-white rounded-xl p-8 text-left shadow-2xl">
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+ <div><label class="text-sm font-bold text-gray-700 block mb-2">Name</label><input type="text" placeholder="Patient name" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500"></div>
+ <div><label class="text-sm font-bold text-gray-700 block mb-2">WhatsApp</label><input type="tel" placeholder="+91 98520 21234" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none"></div>
+ <div><label class="text-sm font-bold text-gray-700 block mb-2">Test / Package</label><select class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none"><option>CBC</option><option>Starter Package 599</option><option>Advanced Package 1,299</option><option>Premium Package 2,799</option><option>Thyroid</option><option>Other</option></select></div>
+ <div><label class="text-sm font-bold text-gray-700 block mb-2">Collection</label><select class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none"><option>Home Collection (Free)</option><option>Walk-in</option></select></div>
+ </div>
+ <button type="submit" class="btn-blue w-full text-center py-4 rounded-lg font-bold text-base">Book Test </button>
+ </form>
+ </div>
 </section>
 
 <footer style="background:#1E3A8A;" class="text-blue-200 py-8 px-6">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
-    <div><div class="text-white font-bold mb-1">HealthScan Labs</div><p class="text-sm">Mumbai's trusted diagnostic lab network. NABL Accredited.</p></div>
-    <div><div class="text-white font-semibold mb-2 text-sm">Main Lab</div><div class="text-sm space-y-1"><div>Andheri (W), Mumbai 400058</div><div>022-1234-5678</div><div>Mon-Sun: 7AM-9PM</div></div></div>
-  </div>
-  <div class="max-w-6xl mx-auto mt-6 pt-4 border-t border-blue-900 text-xs text-center">&copy; 2026 HealthScan Labs Pvt. Ltd. &middot; NABL Accredited &middot; 8 Centers Across Mumbai</div>
+ <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
+ <div><div class="text-white font-bold mb-1"> HealthScan Labs</div><p class="text-sm">Mumbai's trusted diagnostic lab network. NABL Accredited.</p></div>
+ <div><div class="text-white font-semibold mb-2 text-sm">Main Lab</div><div class="text-sm space-y-1"><div>Andheri (W), Mumbai 400058</div><div>022-1234-5678</div><div> Mon–Sun: 7AM–9PM</div></div></div>
+ </div>
+ <div class="max-w-6xl mx-auto mt-6 pt-4 border-t border-blue-900 text-xs text-center">© 2026 HealthScan Labs Pvt. Ltd. · NABL Accredited · 8 Centers Across Mumbai</div>
 </footer>
+<script>gsap.from("#hero-text", { opacity:0, y:40, duration:1, ease:"power3.out" });
+  // Form → WhatsApp
+  document.querySelectorAll('form').forEach(function(form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = this.querySelector('input[type="text"]');
+      var phone = this.querySelector('input[type="tel"]');
+      var msg = 'Hi, I would like to enquire about QuickTest Labs.' + (name && name.value ? ' My name is ' + name.value + '.' : '') + (phone && phone.value ? ' My number is ' + phone.value + '.' : '');
+      window.open('https://wa.me/919852021234?text=' + encodeURIComponent(msg), '_blank');
+    });
+  });
+</script>
 </body>
 </html>
