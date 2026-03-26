@@ -125,7 +125,11 @@
 <nav>
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
     <div class="font-bold violet" style="font-size:1.1rem; letter-spacing:0.04em;">Nova<span style="color:#E8E8F0;">Dx</span></div>
-    <div class="hidden md:flex gap-8 text-sm font-medium" style="color:#666;">
+    <button onclick="document.getElementById('mob-05-dark-precision').classList.toggle('hidden')" class="md:hidden p-2" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+<div id="mob-05-dark-precision" class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-50 border-t"><a href="#tests" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-05-dark-precision').classList.add('hidden')">Tests</a>
+<a href="#packages" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-05-dark-precision').classList.add('hidden')">Packages</a>
+<a href="#book" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-05-dark-precision').classList.add('hidden')">Book</a></div>
+<div class="hidden md:flex gap-8 text-sm font-medium" style="color:#666;">
       <a href="#tests" class="hover:text-violet-400 transition-colors">Tests</a>
       <a href="#packages" class="hover:text-violet-400 transition-colors">Packages</a>
       <a href="#book" class="hover:text-violet-400 transition-colors">Book</a>
@@ -191,7 +195,7 @@
     <div class="tag mb-6">GET STARTED</div>
     <h2 style="font-size:2.2rem; font-weight:700;" class="text-white mb-3">Book Your Test</h2>
     <p style="color:#888;" class="mb-10">Home collection across Pune. Detailed digital reports within 4-24 hours.</p>
-    <form class="text-left rounded-xl p-8" style="background:var(--card); border:1px solid var(--border);">
+    <form action="https://wa.me/919876543210" method="get">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
         <div><label class="text-sm font-semibold block mb-2" style="color:#888;">Name</label><input type="text" placeholder="Your name" class="w-full px-4 py-3 text-sm"></div>
         <div><label class="text-sm font-semibold block mb-2" style="color:#888;">Phone</label><input type="tel" placeholder="+91 98765 43210" class="w-full px-4 py-3 text-sm"></div>
@@ -200,6 +204,31 @@
       </div>
       <button type="submit" class="btn-violet w-full text-center py-4 rounded-lg font-bold text-base tracking-wide">BOOK TEST &rarr;</button>
     </form>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-center mb-10" style="color:#06B6D4;">Trusted by Pune's Health-Conscious</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-cyan-50 p-6 rounded-lg" style="border-left:3px solid #06B6D4;">
+        <p class="text-gray-600 text-sm italic mb-3">"I rely on NovaDx for liquid biopsy panels. Their ctDNA sensitivity rates are comparable to what I see from labs in Bangalore and Hyderabad."</p>
+        <div class="font-bold text-sm" style="color:#06B6D4;">Dr. Sameer K.</div>
+        <div class="text-xs text-gray-400">Oncologist, KEM Hospital</div>
+      </div>
+      <div class="bg-cyan-50 p-6 rounded-lg" style="border-left:3px solid #06B6D4;">
+        <p class="text-gray-600 text-sm italic mb-3">"Spent ₹14,999 on the full genomic panel. Worth every rupee — discovered a BRCA variant that my family doctor would never have tested for proactively."</p>
+        <div class="font-bold text-sm" style="color:#06B6D4;">Tanvi P.</div>
+        <div class="text-xs text-gray-400">Genomic Health Panel</div>
+      </div>
+      <div class="bg-cyan-50 p-6 rounded-lg" style="border-left:3px solid #06B6D4;">
+        <p class="text-gray-600 text-sm italic mb-3">"As a competitive cyclist, I need precise VO2 and lactate markers. NovaDx is the only lab in Pune that runs these panels with proper reference ranges for athletes."</p>
+        <div class="font-bold text-sm" style="color:#06B6D4;">Aditya V.</div>
+        <div class="text-xs text-gray-400">Sports Medicine Panel</div>
+      </div>
+    </div>
   </div>
 </section>
 

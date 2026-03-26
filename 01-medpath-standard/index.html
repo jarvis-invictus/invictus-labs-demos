@@ -18,7 +18,7 @@
   "name": "MedPath Diagnostics",
   "description": "NABL-accredited diagnostic laboratory in Kothrud, Pune. Blood tests, urine analysis, X-ray, ultrasound, ECG, full body checkup packages. Home collection available.",
   "url": "https://medpathdiagnostics.in",
-  "telephone": "+91-20-4567-8901",
+  "telephone": "+91-20-3456-7890",
   "priceRange": "₹",
   "address": {
     "@type": "PostalAddress",
@@ -136,7 +136,12 @@
       <div class="nav-icon">MP</div>
       <div><div class="font-bold teal" style="font-family:'DM Serif Display',serif; font-size:1rem;">MedPath Diagnostics</div><div style="font-size:0.63rem; color:#888; letter-spacing:0.06em;">NABL ACCREDITED &middot; PUNE</div></div>
     </div>
-    <div class="hidden md:flex gap-8 text-sm font-semibold text-gray-500">
+    <button onclick="document.getElementById('mob-01-medpath-standard').classList.toggle('hidden')" class="md:hidden p-2" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+<div id="mob-01-medpath-standard" class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-50 border-t"><a href="#tests" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-01-medpath-standard').classList.add('hidden')">Tests</a>
+<a href="#packages" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-01-medpath-standard').classList.add('hidden')">Packages</a>
+<a href="#about" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-01-medpath-standard').classList.add('hidden')">About</a>
+<a href="#book" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-01-medpath-standard').classList.add('hidden')">Book</a></div>
+<div class="hidden md:flex gap-8 text-sm font-semibold text-gray-500">
       <a href="#tests" class="hover:text-teal-700">Tests</a>
       <a href="#packages" class="hover:text-teal-700">Packages</a>
       <a href="#about" class="hover:text-teal-700">About</a>
@@ -171,7 +176,7 @@
 <section style="background:var(--teal);" class="py-12 px-6">
   <div class="max-w-4xl mx-auto text-center text-white">
     <h2 style="font-family:'DM Serif Display',serif; font-size:1.6rem; font-weight:400; margin-bottom:1rem;">About the Lab</h2>
-    <p style="font-size:0.95rem; opacity:0.9; line-height:1.7; max-width:640px; margin:0 auto;">MedPath Diagnostics has been serving Pune since 2018. We run over 500 tests across pathology, biochemistry, and microbiology from our NABL-accredited facility in Kothrud. Over 200 referring doctors and 50,000 reports delivered. Our average turnaround is 6 hours for routine blood work.</p>
+    <p style="font-size:0.95rem; opacity:0.9; line-height:1.7; max-width:640px; margin:0 auto;">MedPath Diagnostics has been serving Pune since 2012. We run over 500 tests across pathology, biochemistry, and microbiology from our NABL-accredited facility in Kothrud. Over 200 referring doctors and 50,000 reports delivered. Our average turnaround is 6 hours for routine blood work.</p>
   </div>
 </section>
 
@@ -241,11 +246,36 @@
 </section>
 
 <!-- BOOK -->
+
+<!-- TESTIMONIALS -->
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-center mb-10" style="color:#0E7490;">Patient Reviews</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-teal-50 p-6 rounded-lg" style="border-left:3px solid #0E7490;">
+        <p class="text-gray-600 text-sm italic mb-3">"Got my reports on WhatsApp within 6 hours of the blood draw. Everything clearly marked with normal ranges. My doctor was impressed with the report format."</p>
+        <div class="font-bold text-sm" style="color:#0E7490;">Priya D.</div>
+        <div class="text-xs text-gray-400">Full Body Checkup</div>
+      </div>
+      <div class="bg-teal-50 p-6 rounded-lg" style="border-left:3px solid #0E7490;">
+        <p class="text-gray-600 text-sm italic mb-3">"The home collection was exactly on time. The phlebotomist was professional and quick — barely felt the needle. Reports came same day."</p>
+        <div class="font-bold text-sm" style="color:#0E7490;">Arun K.</div>
+        <div class="text-xs text-gray-400">Thyroid Panel</div>
+      </div>
+      <div class="bg-teal-50 p-6 rounded-lg" style="border-left:3px solid #0E7490;">
+        <p class="text-gray-600 text-sm italic mb-3">"Affordable packages and no hidden charges. The ₹799 basic panel covers everything you need for a yearly checkup."</p>
+        <div class="font-bold text-sm" style="color:#0E7490;">Meena S.</div>
+        <div class="text-xs text-gray-400">Diabetes Screening</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section style="background:var(--teal);" class="py-20 px-6" id="book">
   <div class="max-w-3xl mx-auto text-center">
     <h2 style="font-size:2.2rem;" class="font-bold text-white mb-3">Book Your Test</h2>
     <p class="text-teal-100 mb-10">Home collection available 7AM-7PM. Get reports on WhatsApp.</p>
-    <form class="bg-white rounded-xl p-8 text-left shadow-2xl">
+    <form action="https://wa.me/919876543210" method="get">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
         <div><label class="text-sm font-bold text-gray-700 block mb-2">Patient Name</label><input type="text" placeholder="Full name" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-500"></div>
         <div><label class="text-sm font-bold text-gray-700 block mb-2">Phone / WhatsApp</label><input type="tel" placeholder="+91 98765 43210" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none"></div>
@@ -299,7 +329,7 @@
 <footer style="background:#0C4A6E;" class="text-blue-200 py-8 px-6">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
     <div><div class="text-white font-bold mb-1" style="font-family:'DM Serif Display',serif;">MedPath Diagnostics</div><p class="text-sm max-w-xs">NABL accredited diagnostic lab. Trusted by Pune's doctors.</p></div>
-    <div><div class="text-white font-semibold mb-2 text-sm">Lab</div><div class="text-sm space-y-1"><div>FC Road, Pune 411004</div><div>020-3456-7890</div><div>Mon-Sun: 7AM-9PM</div></div></div>
+    <div><div class="text-white font-semibold mb-2 text-sm">Lab</div><div class="text-sm space-y-1"><div>Kothrud, Pune 411038</div><div>020-3456-7890</div><div>Mon-Sun: 7AM-9PM</div></div></div>
   </div>
   <div class="max-w-6xl mx-auto mt-6 pt-4 border-t border-blue-900 text-xs text-center">&copy; 2026 MedPath Diagnostics Pvt. Ltd. &middot; NABL Accredited &middot; ISO 15189:2012</div>
 </footer>

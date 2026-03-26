@@ -62,7 +62,7 @@
       "name": "What is a gut health panel and who needs it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our gut health panel includes stool analysis, microbiome markers, H. pylori testing, and digestive enzyme assessment. It's recommended for people with bloating, IBS, food intolerances, or those on a wellness journey."
+        "text": "Our gut health panel includes stool analysis, microbiome markers, H. pylori testing, and digestive enzyme assessment. It's recommended for people with bloating, IBS, food intolerances, or those on a health assessment."
       }
     },
     {
@@ -121,11 +121,15 @@
 </head>
 <body>
 <a href="https://wa.me/919876543210" class="whatsapp-btn" aria-label="WhatsApp">WA</a>
-<div style="background:var(--emerald); padding:7px 24px; text-align:center; font-size:0.78rem; color:white; font-weight:700; letter-spacing:0.04em;">NABL ACCREDITED &middot; FREE HOME COLLECTION &middot; ORGANIC LIFESTYLE WELLNESS PANELS AVAILABLE</div>
+<div style="background:var(--emerald); padding:7px 24px; text-align:center; font-size:0.78rem; color:white; font-weight:700; letter-spacing:0.04em;">NABL ACCREDITED &middot; FREE HOME COLLECTION &middot; COMPREHENSIVE HEALTH PANELS AVAILABLE</div>
 <nav>
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
     <div class="flex items-center gap-2"><div class="nav-icon">LW</div><span class="font-bold emerald" style="font-size:1.05rem;">Lifeline Wellness Labs</span></div>
-    <div class="hidden md:flex gap-8 text-sm font-semibold text-gray-500"><a href="#tests" class="hover:text-emerald-700">Tests</a><a href="#packages" class="hover:text-emerald-700">Packages</a><a href="#book" class="hover:text-emerald-700">Book</a></div>
+    <button onclick="document.getElementById('mob-04-emerald-wellness').classList.toggle('hidden')" class="md:hidden p-2" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+<div id="mob-04-emerald-wellness" class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-50 border-t"><a href="#tests" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-04-emerald-wellness').classList.add('hidden')">Tests</a>
+<a href="#packages" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-04-emerald-wellness').classList.add('hidden')">Packages</a>
+<a href="#book" class="block py-3 px-4 text-base border-b border-gray-200" onclick="document.getElementById('mob-04-emerald-wellness').classList.add('hidden')">Book</a></div>
+<div class="hidden md:flex gap-8 text-sm font-semibold text-gray-500"><a href="#tests" class="hover:text-emerald-700">Tests</a><a href="#packages" class="hover:text-emerald-700">Packages</a><a href="#book" class="hover:text-emerald-700">Book</a></div>
     <a href="#book" class="btn-emerald text-sm">Book Test</a>
   </div>
 </nav>
@@ -133,9 +137,9 @@
 <section style="background:linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);" class="py-20 px-6">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-14">
     <div class="flex-1" id="hero-text">
-      <div class="pill mb-6">Holistic Health Testing &middot; Pune</div>
+      <div class="pill mb-6">Full-Body Health Testing &middot; Pune</div>
       <h1 style="font-size:3rem; font-weight:800; line-height:1.2; color:#064E3B;" class="mb-5">Know Your Health.<br><span class="emerald">Live Better.</span></h1>
-      <p class="text-gray-600 text-lg mb-8 max-w-md leading-relaxed">Wellness-focused diagnostic lab. Beyond standard tests -- we offer nutrition panels, gut health, hormone balance, and metabolic assessments for a complete wellness picture.</p>
+      <p class="text-gray-600 text-lg mb-8 max-w-md leading-relaxed">Wellness-focused diagnostic lab. Beyond standard tests -- we offer nutrition panels, gut health, hormone balance, and metabolic assessments for a complete health overview.</p>
       <div class="flex gap-4 flex-wrap mb-8">
         <a href="#book" class="btn-emerald">Book Wellness Test &rarr;</a>
         <a href="tel:02056789012" style="border:2px solid #6EE7B7; color:var(--emerald); padding:12px 26px; border-radius:6px; font-weight:700; display:inline-block;">Call Lab</a>
@@ -185,7 +189,7 @@
   <div class="max-w-3xl mx-auto text-center">
     <h2 style="font-size:2.2rem; font-weight:800;" class="text-white mb-3">Book Your Wellness Test</h2>
     <p class="text-emerald-100 mb-10">Home collection across Pune. Results include doctor-reviewed interpretation.</p>
-    <form class="bg-white rounded-xl p-8 text-left shadow-2xl">
+    <form action="https://wa.me/919876543210" method="get">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
         <div><label class="text-sm font-bold text-gray-700 block mb-2">Name</label><input type="text" placeholder="Your name" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-emerald-500"></div>
         <div><label class="text-sm font-bold text-gray-700 block mb-2">WhatsApp</label><input type="tel" placeholder="+91 98765 43210" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none"></div>
@@ -197,13 +201,38 @@
   </div>
 </section>
 
+
+<!-- TESTIMONIALS -->
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-center mb-10" style="color:#059669;">Health Stories</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-emerald-50 p-6 rounded-lg" style="border-left:3px solid #059669;">
+        <p class="text-gray-600 text-sm italic mb-3">"The gut health panel revealed a vitamin D deficiency I had ignored for years. The detailed report with dietary recommendations was genuinely useful."</p>
+        <div class="font-bold text-sm" style="color:#059669;">Kavita S.</div>
+        <div class="text-xs text-gray-400">Gut Health Panel</div>
+      </div>
+      <div class="bg-emerald-50 p-6 rounded-lg" style="border-left:3px solid #059669;">
+        <p class="text-gray-600 text-sm italic mb-3">"At 35, I was constantly tired. The hormone panel showed low testosterone and thyroid issues. My doctor said the test selection was spot-on for my symptoms."</p>
+        <div class="font-bold text-sm" style="color:#059669;">Nikhil R.</div>
+        <div class="text-xs text-gray-400">Hormone Balance Panel</div>
+      </div>
+      <div class="bg-emerald-50 p-6 rounded-lg" style="border-left:3px solid #059669;">
+        <p class="text-gray-600 text-sm italic mb-3">"Unlike other labs that just give you numbers, Lifeline explains what each result means and what normal looks like for your age. That extra context is worth it."</p>
+        <div class="font-bold text-sm" style="color:#059669;">Ankita M.</div>
+        <div class="text-xs text-gray-400">Annual Wellness Check</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section style="background:#F0FDF4;" class="py-16 px-6" id="faq">
   <div class="max-w-3xl mx-auto">
     <div class="text-center mb-10"><div class="pill mb-4">FAQ</div><h2 style="font-size:2rem; font-weight:800; color:#064E3B;">Common Questions</h2></div>
     <div style="display:flex; flex-direction:column; gap:12px;">
       <details style="background:white; border:1px solid #D1FAE5; border-radius:10px; padding:18px 22px;">
         <summary style="font-weight:700; color:#064E3B; cursor:pointer; font-size:0.95rem;">What is a gut health panel and who needs it?</summary>
-        <p style="color:#555; font-size:0.88rem; margin-top:10px; line-height:1.6;">Our gut health panel includes stool analysis, microbiome markers, H. pylori testing, and digestive enzyme assessment. Recommended for people with bloating, IBS, food intolerances, or those on a wellness journey.</p>
+        <p style="color:#555; font-size:0.88rem; margin-top:10px; line-height:1.6;">Our gut health panel includes stool analysis, microbiome markers, H. pylori testing, and digestive enzyme assessment. Recommended for people with bloating, IBS, food intolerances, or those on a health assessment.</p>
       </details>
       <details style="background:white; border:1px solid #D1FAE5; border-radius:10px; padding:18px 22px;">
         <summary style="font-weight:700; color:#064E3B; cursor:pointer; font-size:0.95rem;">Do you offer home sample collection in Pune?</summary>
