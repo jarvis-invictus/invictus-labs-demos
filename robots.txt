@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://invictus-labs-demos.vercel.app/sitemap.xml
