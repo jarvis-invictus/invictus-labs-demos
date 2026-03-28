@@ -1,2 +1,5 @@
-# invictus-labs-demos
-Invictus AI — Pathology Lab Demo Sites Library (5 variants)
+# Invictus AI Demo Library
+
+Live at: https://demo.invictus-ai.in | https://jarvis-invictus.github.io/invictus-labs-demos/
+
+Updated: 2026-03-28 18:50 IST
